@@ -1,0 +1,86 @@
+@mixin boxshadow($color){
+	box-shadow:0 -5px 2px 0 $color
+}
+
+$black:#000;
+$darkGrey:#444;
+$white:#fff;
+
+$color_party-lib_red:#f00;
+$color_party-pc_blue:#141f7f;
+$color_party-ndp_orange:#ed5300; 
+$color_party-grn_green:#11681d;
+$color_party-other_grey:#ccc;
+
+$barWidth: 80px;
+
+
+.cap{text-transform:uppercase}
+
+.party {
+  display:inline-table;
+  font-weight:bold;
+  min-height:1em;
+  list-style-type:none;
+  margin:0;
+  padding:0.3em 1em;
+  position:relative;
+  vertical-align:bottom;
+  width:$barWidth
+}
+
+/* BEGIN party colours */
+.party {
+  background-color:transparent;
+  @include boxshadow($black);
+  color:$black;
+  background-color:$color_party-other_grey;
+  background-image:
+  linear-gradient(#999, $color_party-other_grey);
+
+  @at-root #{&}:global(_ind) {
+    color:$black;
+    background-color:$color_party-other_grey;
+    background-image:
+    linear-gradient(#999, $color_party-other_grey);
+
+    .percentage{
+      color:$black;
+    }
+  }
+  @at-root #{&}:global(_grn) {
+    color:$white;
+    background-color:$color_party-grn_green;
+    background-image:
+    linear-gradient(#31bc0b, $color_party-grn_green)
+  }
+  @at-root #{&}:global(_lib) {
+    color:$white;
+    background-color:$color_party-lib_red;
+    background-image:
+    linear-gradient($color_party-lib_red, #a50b27)
+  }
+  @at-root #{&}:global(_ndp) {
+    color:#fdfdfd;
+    background-color:$color_party-ndp_orange;
+    background-image:
+    linear-gradient(#ea9502, $color_party-ndp_orange)
+  }
+  @at-root #{&}:global(_pc) {
+    color:$white;
+    background-color:$color_party-pc_blue;
+    background-image:
+    linear-gradient(#0ea2f2, $color_party-pc_blue)
+  }
+ 
+}
+/* END party colours */
+
+.percentage {
+  bottom: 0;
+  color:$white;
+  left: 20px;
+  position: absolute;
+  z-index: 1
+}
+

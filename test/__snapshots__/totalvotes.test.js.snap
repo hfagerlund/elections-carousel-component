@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TotalVotes component rendering tests should match its snapshot with riding data 1`] = `
+<p
+  className="totalVotes"
+>
+  Total votes for this riding:
+  <strong>
+     
+    10160
+  </strong>
+   votes
+</p>
+`;
+
+exports[`TotalVotes component rendering tests should render vote total for the riding 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <TotalVotes
+    riding={Object {}}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        "Total votes for this riding:",
+        <strong>
+           
+        </strong>,
+        " votes",
+      ],
+      "className": "totalVotes",
+    },
+    "ref": null,
+    "rendered": Array [
+      "Total votes for this riding:",
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            " ",
+            null,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          " ",
+          null,
+        ],
+        "type": "strong",
+      },
+      " votes",
+    ],
+    "type": "p",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          "Total votes for this riding:",
+          <strong>
+             
+          </strong>,
+          " votes",
+        ],
+        "className": "totalVotes",
+      },
+      "ref": null,
+      "rendered": Array [
+        "Total votes for this riding:",
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              " ",
+              null,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            " ",
+            null,
+          ],
+          "type": "strong",
+        },
+        " votes",
+      ],
+      "type": "p",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

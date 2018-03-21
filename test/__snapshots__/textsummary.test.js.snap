@@ -1,0 +1,154 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextSummary component rendering tests should match its snapshot with riding data 1`] = `
+<div
+  className="ridingSummary"
+>
+  <p
+    className="candidate"
+  >
+    <span
+      className="label cap candidate_ndp"
+    >
+       
+      NDP
+       
+    </span>
+    <span
+      className="result"
+    >
+      Henry Spurr
+       
+      received
+       
+      834
+       
+      votes (
+      8.21
+      %)
+    </span>
+  </p>
+  <p
+    className="candidate candidateWinner"
+  >
+    <span
+      className="label cap candidate_lib labelWinner"
+    >
+       
+      LIB
+       
+    </span>
+    <span
+      className="result summaryWinner"
+    >
+      Stephen McNeil
+       
+      was elected with
+       
+      7709
+       
+      votes (
+      75.88
+      %)
+    </span>
+  </p>
+  <p
+    className="candidate"
+  >
+    <span
+      className="label cap candidate_pc"
+    >
+       
+      PC
+       
+    </span>
+    <span
+      className="result"
+    >
+      Ginny Hurlock
+       
+      received
+       
+      1390
+       
+      votes (
+      13.68
+      %)
+    </span>
+  </p>
+  <p
+    className="candidate"
+  >
+    <span
+      className="label cap candidate_grn"
+    >
+       
+      GRN
+       
+    </span>
+    <span
+      className="result"
+    >
+      Ron Neufeld
+       
+      received
+       
+      227
+       
+      votes (
+      2.23
+      %)
+    </span>
+  </p>
+</div>
+`;
+
+exports[`TextSummary component rendering tests should render a riding summary 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <TextSummary
+    riding={Object {}}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": null,
+      "className": "ridingSummary",
+    },
+    "ref": null,
+    "rendered": null,
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": null,
+        "className": "ridingSummary",
+      },
+      "ref": null,
+      "rendered": null,
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

@@ -1,0 +1,16 @@
+$ridingWidth:600px;
+
+
+.riding {
+  background-color:transparent;
+  display:inline-table;
+  margin:0 0 1em 0;
+  padding:1em 0 0 0;
+  width:$ridingWidth
+}
+
+.riding__list {
+  padding: 0;
+  text-align: center
+}
+
