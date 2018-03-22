@@ -1,10 +1,9 @@
 import Bar from '../src/js/elections/components/Bar';
 import React from 'react';
 
-import {assert} from 'chai';
-import {shallow} from 'enzyme';
-import {spy} from 'sinon';
-
+import { assert } from 'chai';
+import { shallow } from 'enzyme';
+import { spy } from 'sinon';
 
 describe('Bar component', () => {
   describe('rendering tests', () => {
@@ -15,4 +14,3 @@ describe('Bar component', () => {
     });
   });
 });
-

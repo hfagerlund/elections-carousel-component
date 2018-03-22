@@ -2,9 +2,7 @@ import Controls from '../src/js/elections/components/Controls';
 import React from 'react';
 
 import { shallow } from 'enzyme';
-import TestUtils from 'react-dom/test-utils';
-import {spy} from 'sinon';
-
+import { spy } from 'sinon';
 
 describe('Controls component', () => {
   describe('interactions tests', () => {
@@ -18,4 +16,3 @@ describe('Controls component', () => {
     });
   });
 });
-

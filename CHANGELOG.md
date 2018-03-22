@@ -7,6 +7,9 @@
 ### New features:
 * Riding/slide number display - (example: 8 of 10)
 
+### Fixed:
+* Test improvements: automates code formatting of tests
+
 - - -
 ## Releases
 

@@ -4,5 +4,5 @@ docs/js/**/*
 docs/mkdocs/js/**/*
 src/assets/fixtures/*
 src/js/vendors/*
-test/**/*
+test/__snapshots__/*
 webpack.config.babel.js
