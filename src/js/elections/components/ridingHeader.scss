@@ -1,6 +1,16 @@
 .heading{
+  display:inline-table;
   font-size:1.4em;
   font-weight:bold;
   margin:0 0 0.5em 3.5em
 }
 
+.subheading{
+  background-color:#ccc;
+  display:inline-table;
+  float:right;
+  font-size:0.9em;
+  font-style:italic;
+  margin:0 5em 0.5em 0;
+  padding:0.2em 0.5em
+}

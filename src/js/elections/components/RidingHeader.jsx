@@ -9,11 +9,16 @@ export default class RidingHeader extends React.Component {
     return (
       <header className={css.header}>
         <h2 className={css.heading}>Riding of: {this.props.ridingName}</h2>
+        <h3 className={css.subheading}>
+          {this.props.ridingId} of {this.props.numRidings}
+        </h3>
       </header>
     );
   }
 }
 
 RidingHeader.propTypes = {
-  ridingName: PropTypes.string
+  ridingName: PropTypes.string,
+  ridingId: PropTypes.number,
+  numRidings: PropTypes.number
 };

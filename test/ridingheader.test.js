@@ -30,5 +30,13 @@ describe('RidingHeader component', () => {
         assert.equal(heading.length, 1);
         assert.ok(heading.hasClass('heading'));
     });
+
+    it('should contain an h3 heading with a specific classname', () => {
+        const wrapper = mount(<RidingHeader />);
+        const heading = wrapper.find('h3');
+
+        assert.equal(heading.length, 1);
+        assert.ok(heading.hasClass('subheading'));
+    });
   });
 });

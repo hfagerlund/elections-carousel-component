@@ -2,6 +2,10 @@
 
 - - -
 ## Unreleased
+*(last updated: 2018-03-22)*
+
+### New features:
+* Riding/slide number display - (example: 8 of 10)
 
 - - -
 ## Releases
