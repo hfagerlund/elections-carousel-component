@@ -32,7 +32,7 @@ describe('TextSummary component', () => {
 					"partyId": 12,
 					"votes": 7709,
 					"isElected": true,
-					"partyCode": "LIB"
+          "partyCode": "LIB"
 				},
 				{
 					"name": "Ginny Hurlock",
@@ -42,11 +42,11 @@ describe('TextSummary component', () => {
 					"partyCode": "PC"
 				},
 				{
-					"name": "Ron Neufeld",
+          "name": "Ron Neufeld",
 					"partyId": 11,
 					"votes": 227,
 					"isElected": false,
-					"partyCode": "GRN"
+          "partyCode": "GRN"
 				}
 			]
 		};

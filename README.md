@@ -1,5 +1,7 @@
 # elections-carousel-component
 
+[![Build Status](https://travis-ci.org/hfagerlund/elections-carousel-component.svg?branch=master)](https://travis-ci.org/hfagerlund/elections-carousel-component)[![Codacy Badge](https://api.codacy.com/project/badge/Grade/0c79a9df9e7c4847b1de77099bae58d4)](https://www.codacy.com/app/hfagerlund/elections-carousel-component?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=hfagerlund/elections-carousel-component&amp;utm_campaign=Badge_Grade)
+
 Carousel presentation of data from a JSON feed of election results.
 
 Enables scrolling through the election results for all ridings using the Next and Back controls (via mouse or keyboard), displaying the number of votes and automatically calculating the percentage of the vote won by each candidate in each riding.

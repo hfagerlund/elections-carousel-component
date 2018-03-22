@@ -12,17 +12,15 @@ import {spy} from 'sinon';
 describe('App component', () => {
   describe('rendering tests', () => {
     it('renders expected main heading', () => {
-      var app = TestUtils.renderIntoDocument(
-        <App />
-      );
+      var app = TestUtils.renderIntoDocument(<App />);
       var mainHeading = TestUtils.findRenderedDOMComponentWithTag(app, 'h1');
       expect(mainHeading.textContent).equal('2011 Election Results');
     });
 
     it('should show a single wrapper div', () => {
-        const wrapper = shallow(<App />);
-        const container = wrapper.first('div');
-        assert.equal(container.length, 1);
+      const wrapper = shallow(<App />);
+      const container = wrapper.first('div');
+      assert.equal(container.length, 1);
     });
 
     it('should render child components Ridings and Controls', () => {

@@ -1,7 +1,7 @@
 import RidingHeader from '../src/js/elections/components/RidingHeader';
 import React from 'react';
 
-import {assert} from 'chai';
+import {assert, expect} from 'chai';
 import { mount } from 'enzyme';
 import TestUtils from 'react-dom/test-utils';
 
@@ -13,7 +13,7 @@ describe('RidingHeader component', () => {
         <RidingHeader />
       );
       var heading = TestUtils.findRenderedDOMComponentWithTag(app, 'h2');
-      expect(heading.textContent).toContain('Riding of:');
+      expect(heading.textContent).contain('Riding of:');
     });
 
     it('should contain a header with a specific classname', () => {
@@ -32,4 +32,3 @@ describe('RidingHeader component', () => {
     });
   });
 });
-

@@ -1,4 +1,3 @@
-import App from '../src/js/elections/components/App';
 import Controls from '../src/js/elections/components/Controls';
 import React from 'react';
 

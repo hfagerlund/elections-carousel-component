@@ -1,6 +1,6 @@
 /*!
  * 
- *    elections-carousel-component - React component-based presentation of election results from a JSON API
+ *    elections-carousel-component - API-based React carousel component
  *    @author: Heini Fagerlund
  *    @version: 0.1.0
  *    @repository: https://github.com/hfagerlund/elections-carousel-component/
