@@ -27,17 +27,15 @@ describe('App component', () => {
       expect(wrapper.containsAllMatchingElements([<Ridings />, <Controls />])).to.equal(true);
     });
 
-    it('has one Ridings component', function() {
+    it('has one Ridings component', () => {
       var component = TestUtils.renderIntoDocument(<App />);
       var childComponents = TestUtils.scryRenderedComponentsWithType(component, Ridings);
-
       expect(childComponents.length).equal(1);
     });
 
-    it('has one Controls component', function() {
+    it('has one Controls component', () => {
       var component = TestUtils.renderIntoDocument(<App />);
       var childComponents = TestUtils.scryRenderedComponentsWithType(component, Controls);
-
       expect(childComponents.length).equal(1);
     });
   });
@@ -62,7 +60,6 @@ describe('App component', () => {
     it('passes callback to Controls', () => {
       const wrapper = shallow(<App />);
       const controls = wrapper.find(Controls);
-      const callback = wrapper.instance().props.callback;
       const callBack = wrapper.instance().callBack;
       expect(controls.prop('callback')).to.eql(callBack);
     });

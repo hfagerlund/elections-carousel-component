@@ -1,6 +1,7 @@
 import TotalVotes from '../src/js/elections/components/TotalVotes';
 import React from 'react';
 
+import expect from 'expect';
 import { shallow } from 'enzyme';
 import renderer from 'react-test-renderer';
 
