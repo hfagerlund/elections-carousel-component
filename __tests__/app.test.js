@@ -24,7 +24,10 @@ describe('App component', () => {
 
     it('should render child components Ridings and Controls', () => {
       const wrapper = shallow(<App />);
-      expect(wrapper.containsAllMatchingElements([<Ridings />, <Controls />])).to.equal(true);
+      expect(wrapper.containsAllMatchingElements([
+        <div><Ridings allRidings={[]} newPosition={0} /></div>,
+        <Controls />,
+      ])).to.equal(true);
     });
 
     it('has one Ridings component', () => {
@@ -50,7 +53,7 @@ describe('App component', () => {
   describe('lifecycle tests', () => {
     it('calls componentDidMount() when component is mounted', () => {
       const componentDidMountSpy = spy(App.prototype, 'componentDidMount');
-      const wrapper = mount(<App />);
+      mount(<App />);
       assert.ok(App.prototype.componentDidMount.calledOnce);
       componentDidMountSpy.restore();
     });

@@ -3,7 +3,6 @@ import React from 'react';
 
 import { assert } from 'chai';
 import { shallow } from 'enzyme';
-import { spy } from 'sinon';
 
 describe('Bar component', () => {
   describe('rendering tests', () => {
