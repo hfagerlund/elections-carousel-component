@@ -52,7 +52,7 @@ describe('App component', () => {
   describe('lifecycle tests', () => {
     it('calls componentDidMount() when component is mounted', () => {
       const componentDidMountSpy = spy(App.prototype, 'componentDidMount');
-      const wrapper = mount(<App />);
+      mount(<App />);
       assert.ok(App.prototype.componentDidMount.calledOnce);
       componentDidMountSpy.restore();
     });
