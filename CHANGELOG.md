@@ -7,6 +7,9 @@
 ### New features:
 * Riding/slide number display - (example: 8 of 10)
 
+### Changed:
+* Renames `test` directory to `__tests__` (as per [Jest](https://github.com/facebook/jest) naming conventions)
+
 ### Fixed:
 * Test improvements: automates code formatting of tests
 
