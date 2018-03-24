@@ -2,13 +2,15 @@
 
 - - -
 ## Unreleased
-*(last updated: 2018-03-22)*
+*(last updated: 2018-03-24)*
 
 ### New features:
+* Demo page at: https://hfagerlund.github.io/elections-carousel-component/
 * Riding/slide number display - (example: 8 of 10)
 
 ### Changed:
 * Renames `test` directory to `__tests__` (as per [Jest](https://github.com/facebook/jest) naming conventions)
+* Fixes ESLint configuration (sets to [Jest](https://github.com/facebook/jest) environment)
 
 ### Fixed:
 * Test improvements: automates code formatting of tests

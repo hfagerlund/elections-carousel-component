@@ -11,6 +11,12 @@ Enables scrolling through the election results for all ridings using the Next an
 
 - - -
 
+## Demo
+
+Available at: https://hfagerlund.github.io/elections-carousel-component/
+
+- - -
+
 ## Quick start
 
 ```
