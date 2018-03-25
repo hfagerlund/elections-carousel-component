@@ -25,7 +25,7 @@ describe('App component', () => {
     it('should render child components Ridings and Controls', () => {
       const wrapper = shallow(<App />);
       const options = [
-        <div>
+        <div key={'wrapper_1'}>
           <Ridings key={'child_1'} />
         </div>,
         <Controls key={'child_2'} />
