@@ -1,7 +1,6 @@
 .prettierignore
 dist/js/**/*
-docs/js/**/*
-docs/mkdocs/js/**/*
+docs/**/*
 src/assets/fixtures/*
 src/js/vendors/*
 test-setup.js

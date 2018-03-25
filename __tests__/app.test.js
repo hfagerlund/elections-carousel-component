@@ -24,7 +24,13 @@ describe('App component', () => {
 
     it('should render child components Ridings and Controls', () => {
       const wrapper = shallow(<App />);
-      expect(wrapper.containsAllMatchingElements([<Ridings />, <Controls />])).to.equal(true);
+      const options = [
+        <div>
+          <Ridings key={'child_1'} />
+        </div>,
+        <Controls key={'child_2'} />
+      ];
+      expect(wrapper.containsAllMatchingElements(options)).to.equal(true);
     });
 
     it('has one Ridings component', function() {
