@@ -1,13 +1,1974 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Ridings component rendering tests should match its snapshot with riding data (received from props) 1`] = `null`;
+exports[`Ridings component rendering tests should match its snapshot with riding data (received from props) 1`] = `
+Array [
+  <article
+    className="riding"
+    id="art_1"
+  >
+    <header
+      className="header"
+    >
+      <h2
+        className="heading"
+      >
+        Riding of: 
+        Annapolis
+      </h2>
+      <h3
+        className="subheading"
+      >
+        1
+         of 
+        10
+      </h3>
+    </header>
+    <ol
+      className="riding__list"
+    >
+      <li
+        className="party party_lib winner"
+        style={
+          Object {
+            "height": "190px",
+          }
+        }
+      >
+        <span
+          className="cap"
+        >
+          Elected
+        </span>
+        <span
+          className="percentage"
+        >
+          <span
+            className="cap"
+          >
+            LIB
+             
+          </span>
+          75.88
+          %
+        </span>
+      </li>
+      <li
+        className="party party_pc"
+        style={
+          Object {
+            "height": "35px",
+          }
+        }
+      >
+        
+        <span
+          className="percentage"
+        >
+          <span
+            className="cap"
+          >
+            PC
+             
+          </span>
+          13.68
+          %
+        </span>
+      </li>
+      <li
+        className="party party_ndp"
+        style={
+          Object {
+            "height": "20px",
+          }
+        }
+      >
+        
+        <span
+          className="percentage"
+        >
+          <span
+            className="cap"
+          >
+            NDP
+             
+          </span>
+          8.21
+          %
+        </span>
+      </li>
+      <li
+        className="party party_grn"
+        style={
+          Object {
+            "height": "5px",
+          }
+        }
+      >
+        
+        <span
+          className="percentage"
+        >
+          <span
+            className="cap"
+          >
+            GRN
+             
+          </span>
+          2.23
+          %
+        </span>
+      </li>
+    </ol>
+    <div
+      className="ridingSummary"
+    >
+      <p
+        className="candidate candidateWinner"
+      >
+        <span
+          className="label cap candidate_lib labelWinner"
+        >
+           
+          LIB
+           
+        </span>
+        <span
+          className="result summaryWinner"
+        >
+          Stephen McNeil
+           
+          was elected with
+           
+          7709
+           
+          votes (
+          75.88
+          %)
+        </span>
+      </p>
+      <p
+        className="candidate"
+      >
+        <span
+          className="label cap candidate_pc"
+        >
+           
+          PC
+           
+        </span>
+        <span
+          className="result"
+        >
+          Ginny Hurlock
+           
+          received
+           
+          1390
+           
+          votes (
+          13.68
+          %)
+        </span>
+      </p>
+      <p
+        className="candidate"
+      >
+        <span
+          className="label cap candidate_ndp"
+        >
+           
+          NDP
+           
+        </span>
+        <span
+          className="result"
+        >
+          Henry Spurr
+           
+          received
+           
+          834
+           
+          votes (
+          8.21
+          %)
+        </span>
+      </p>
+      <p
+        className="candidate"
+      >
+        <span
+          className="label cap candidate_grn"
+        >
+           
+          GRN
+           
+        </span>
+        <span
+          className="result"
+        >
+          Ron Neufeld
+           
+          received
+           
+          227
+           
+          votes (
+          2.23
+          %)
+        </span>
+      </p>
+    </div>
+    <p
+      className="totalVotes"
+    >
+      Total votes for this riding:
+      <strong>
+         
+        10160
+      </strong>
+       votes
+    </p>
+  </article>,
+  <article
+    className="riding"
+    id="art_2"
+  >
+    <header
+      className="header"
+    >
+      <h2
+        className="heading"
+      >
+        Riding of: 
+        Antigonish
+      </h2>
+      <h3
+        className="subheading"
+      >
+        2
+         of 
+        10
+      </h3>
+    </header>
+    <ol
+      className="riding__list"
+    >
+      <li
+        className="party party_lib winner"
+        style={
+          Object {
+            "height": "107.5px",
+          }
+        }
+      >
+        <span
+          className="cap"
+        >
+          Elected
+        </span>
+        <span
+          className="percentage"
+        >
+          <span
+            className="cap"
+          >
+            LIB
+             
+          </span>
+          42.79
+          %
+        </span>
+      </li>
+      <li
+        className="party party_pc"
+        style={
+          Object {
+            "height": "80px",
+          }
+        }
+      >
+        
+        <span
+          className="percentage"
+        >
+          <span
+            className="cap"
+          >
+            PC
+             
+          </span>
+          31.61
+          %
+        </span>
+      </li>
+      <li
+        className="party party_ndp"
+        style={
+          Object {
+            "height": "65px",
+          }
+        }
+      >
+        
+        <span
+          className="percentage"
+        >
+          <span
+            className="cap"
+          >
+            NDP
+             
+          </span>
+          25.6
+          %
+        </span>
+      </li>
+    </ol>
+    <div
+      className="ridingSummary"
+    >
+      <p
+        className="candidate candidateWinner"
+      >
+        <span
+          className="label cap candidate_lib labelWinner"
+        >
+           
+          LIB
+           
+        </span>
+        <span
+          className="result summaryWinner"
+        >
+          Randy Delorey
+           
+          was elected with
+           
+          3882
+           
+          votes (
+          42.79
+          %)
+        </span>
+      </p>
+      <p
+        className="candidate"
+      >
+        <span
+          className="label cap candidate_pc"
+        >
+           
+          PC
+           
+        </span>
+        <span
+          className="result"
+        >
+          Darren Thompson
+           
+          received
+           
+          2868
+           
+          votes (
+          31.61
+          %)
+        </span>
+      </p>
+      <p
+        className="candidate"
+      >
+        <span
+          className="label cap candidate_ndp"
+        >
+           
+          NDP
+           
+        </span>
+        <span
+          className="result"
+        >
+          Maurice Smith
+           
+          received
+           
+          2323
+           
+          votes (
+          25.6
+          %)
+        </span>
+      </p>
+    </div>
+    <p
+      className="totalVotes"
+    >
+      Total votes for this riding:
+      <strong>
+         
+        9073
+      </strong>
+       votes
+    </p>
+  </article>,
+  <article
+    className="riding"
+    id="art_3"
+  >
+    <header
+      className="header"
+    >
+      <h2
+        className="heading"
+      >
+        Riding of: 
+        Argyle-Barrington
+      </h2>
+      <h3
+        className="subheading"
+      >
+        3
+         of 
+        10
+      </h3>
+    </header>
+    <ol
+      className="riding__list"
+    >
+      <li
+        className="party party_pc winner"
+        style={
+          Object {
+            "height": "137.5px",
+          }
+        }
+      >
+        <span
+          className="cap"
+        >
+          Elected
+        </span>
+        <span
+          className="percentage"
+        >
+          <span
+            className="cap"
+          >
+            PC
+             
+          </span>
+          54.64
+          %
+        </span>
+      </li>
+      <li
+        className="party party_lib"
+        style={
+          Object {
+            "height": "100px",
+          }
+        }
+      >
+        
+        <span
+          className="percentage"
+        >
+          <span
+            className="cap"
+          >
+            LIB
+             
+          </span>
+          40.43
+          %
+        </span>
+      </li>
+      <li
+        className="party party_ndp"
+        style={
+          Object {
+            "height": "12.5px",
+          }
+        }
+      >
+        
+        <span
+          className="percentage"
+        >
+          <span
+            className="cap"
+          >
+            NDP
+             
+          </span>
+          4.93
+          %
+        </span>
+      </li>
+    </ol>
+    <div
+      className="ridingSummary"
+    >
+      <p
+        className="candidate candidateWinner"
+      >
+        <span
+          className="label cap candidate_pc labelWinner"
+        >
+           
+          PC
+           
+        </span>
+        <span
+          className="result summaryWinner"
+        >
+          Chris d'Entremont
+           
+          was elected with
+           
+          3931
+           
+          votes (
+          54.64
+          %)
+        </span>
+      </p>
+      <p
+        className="candidate"
+      >
+        <span
+          className="label cap candidate_lib"
+        >
+           
+          LIB
+           
+        </span>
+        <span
+          className="result"
+        >
+          Kent Blades
+           
+          received
+           
+          2909
+           
+          votes (
+          40.43
+          %)
+        </span>
+      </p>
+      <p
+        className="candidate"
+      >
+        <span
+          className="label cap candidate_ndp"
+        >
+           
+          NDP
+           
+        </span>
+        <span
+          className="result"
+        >
+          Kenn Baynton
+           
+          received
+           
+          355
+           
+          votes (
+          4.93
+          %)
+        </span>
+      </p>
+    </div>
+    <p
+      className="totalVotes"
+    >
+      Total votes for this riding:
+      <strong>
+         
+        7195
+      </strong>
+       votes
+    </p>
+  </article>,
+  <article
+    className="riding"
+    id="art_4"
+  >
+    <header
+      className="header"
+    >
+      <h2
+        className="heading"
+      >
+        Riding of: 
+        Bedford
+      </h2>
+      <h3
+        className="subheading"
+      >
+        4
+         of 
+        10
+      </h3>
+    </header>
+    <ol
+      className="riding__list"
+    >
+      <li
+        className="party party_lib winner"
+        style={
+          Object {
+            "height": "152.5px",
+          }
+        }
+      >
+        <span
+          className="cap"
+        >
+          Elected
+        </span>
+        <span
+          className="percentage"
+        >
+          <span
+            className="cap"
+          >
+            LIB
+             
+          </span>
+          60.66
+          %
+        </span>
+      </li>
+      <li
+        className="party party_pc"
+        style={
+          Object {
+            "height": "50px",
+          }
+        }
+      >
+        
+        <span
+          className="percentage"
+        >
+          <span
+            className="cap"
+          >
+            PC
+             
+          </span>
+          20.21
+          %
+        </span>
+      </li>
+      <li
+        className="party party_ndp"
+        style={
+          Object {
+            "height": "42.5px",
+          }
+        }
+      >
+        
+        <span
+          className="percentage"
+        >
+          <span
+            className="cap"
+          >
+            NDP
+             
+          </span>
+          16.96
+          %
+        </span>
+      </li>
+      <li
+        className="party party_grn"
+        style={
+          Object {
+            "height": "5px",
+          }
+        }
+      >
+        
+        <span
+          className="percentage"
+        >
+          <span
+            className="cap"
+          >
+            GRN
+             
+          </span>
+          2.17
+          %
+        </span>
+      </li>
+    </ol>
+    <div
+      className="ridingSummary"
+    >
+      <p
+        className="candidate candidateWinner"
+      >
+        <span
+          className="label cap candidate_lib labelWinner"
+        >
+           
+          LIB
+           
+        </span>
+        <span
+          className="result summaryWinner"
+        >
+          Kelly Regan
+           
+          was elected with
+           
+          6080
+           
+          votes (
+          60.66
+          %)
+        </span>
+      </p>
+      <p
+        className="candidate"
+      >
+        <span
+          className="label cap candidate_pc"
+        >
+           
+          PC
+           
+        </span>
+        <span
+          className="result"
+        >
+          Joan Christie
+           
+          received
+           
+          2026
+           
+          votes (
+          20.21
+          %)
+        </span>
+      </p>
+      <p
+        className="candidate"
+      >
+        <span
+          className="label cap candidate_ndp"
+        >
+           
+          NDP
+           
+        </span>
+        <span
+          className="result"
+        >
+          Mike Poworoznyk
+           
+          received
+           
+          1700
+           
+          votes (
+          16.96
+          %)
+        </span>
+      </p>
+      <p
+        className="candidate"
+      >
+        <span
+          className="label cap candidate_grn"
+        >
+           
+          GRN
+           
+        </span>
+        <span
+          className="result"
+        >
+          Ian Charles
+           
+          received
+           
+          217
+           
+          votes (
+          2.17
+          %)
+        </span>
+      </p>
+    </div>
+    <p
+      className="totalVotes"
+    >
+      Total votes for this riding:
+      <strong>
+         
+        10023
+      </strong>
+       votes
+    </p>
+  </article>,
+  <article
+    className="riding"
+    id="art_5"
+  >
+    <header
+      className="header"
+    >
+      <h2
+        className="heading"
+      >
+        Riding of: 
+        Cape Breton Centre
+      </h2>
+      <h3
+        className="subheading"
+      >
+        5
+         of 
+        10
+      </h3>
+    </header>
+    <ol
+      className="riding__list"
+    >
+      <li
+        className="party party_ndp winner"
+        style={
+          Object {
+            "height": "112.5px",
+          }
+        }
+      >
+        <span
+          className="cap"
+        >
+          Elected
+        </span>
+        <span
+          className="percentage"
+        >
+          <span
+            className="cap"
+          >
+            NDP
+             
+          </span>
+          45.29
+          %
+        </span>
+      </li>
+      <li
+        className="party party_lib"
+        style={
+          Object {
+            "height": "107.5px",
+          }
+        }
+      >
+        
+        <span
+          className="percentage"
+        >
+          <span
+            className="cap"
+          >
+            LIB
+             
+          </span>
+          43.21
+          %
+        </span>
+      </li>
+      <li
+        className="party party_pc"
+        style={
+          Object {
+            "height": "27.5px",
+          }
+        }
+      >
+        
+        <span
+          className="percentage"
+        >
+          <span
+            className="cap"
+          >
+            PC
+             
+          </span>
+          11.49
+          %
+        </span>
+      </li>
+    </ol>
+    <div
+      className="ridingSummary"
+    >
+      <p
+        className="candidate candidateWinner"
+      >
+        <span
+          className="label cap candidate_ndp labelWinner"
+        >
+           
+          NDP
+           
+        </span>
+        <span
+          className="result summaryWinner"
+        >
+          Frank Corbett
+           
+          was elected with
+           
+          3440
+           
+          votes (
+          45.29
+          %)
+        </span>
+      </p>
+      <p
+        className="candidate"
+      >
+        <span
+          className="label cap candidate_lib"
+        >
+           
+          LIB
+           
+        </span>
+        <span
+          className="result"
+        >
+          Dave Wilton
+           
+          received
+           
+          3282
+           
+          votes (
+          43.21
+          %)
+        </span>
+      </p>
+      <p
+        className="candidate"
+      >
+        <span
+          className="label cap candidate_pc"
+        >
+           
+          PC
+           
+        </span>
+        <span
+          className="result"
+        >
+          Edna Lee
+           
+          received
+           
+          873
+           
+          votes (
+          11.49
+          %)
+        </span>
+      </p>
+    </div>
+    <p
+      className="totalVotes"
+    >
+      Total votes for this riding:
+      <strong>
+         
+        7595
+      </strong>
+       votes
+    </p>
+  </article>,
+  <article
+    className="riding"
+    id="art_6"
+  >
+    <header
+      className="header"
+    >
+      <h2
+        className="heading"
+      >
+        Riding of: 
+        Cape Breton-Richmond
+      </h2>
+      <h3
+        className="subheading"
+      >
+        6
+         of 
+        10
+      </h3>
+    </header>
+    <ol
+      className="riding__list"
+    >
+      <li
+        className="party party_lib winner"
+        style={
+          Object {
+            "height": "142.5px",
+          }
+        }
+      >
+        <span
+          className="cap"
+        >
+          Elected
+        </span>
+        <span
+          className="percentage"
+        >
+          <span
+            className="cap"
+          >
+            LIB
+             
+          </span>
+          56.62
+          %
+        </span>
+      </li>
+      <li
+        className="party party_pc"
+        style={
+          Object {
+            "height": "55px",
+          }
+        }
+      >
+        
+        <span
+          className="percentage"
+        >
+          <span
+            className="cap"
+          >
+            PC
+             
+          </span>
+          21.88
+          %
+        </span>
+      </li>
+      <li
+        className="party party_ndp"
+        style={
+          Object {
+            "height": "55px",
+          }
+        }
+      >
+        
+        <span
+          className="percentage"
+        >
+          <span
+            className="cap"
+          >
+            NDP
+             
+          </span>
+          21.5
+          %
+        </span>
+      </li>
+    </ol>
+    <div
+      className="ridingSummary"
+    >
+      <p
+        className="candidate candidateWinner"
+      >
+        <span
+          className="label cap candidate_lib labelWinner"
+        >
+           
+          LIB
+           
+        </span>
+        <span
+          className="result summaryWinner"
+        >
+          Michel Samson
+           
+          was elected with
+           
+          4390
+           
+          votes (
+          56.62
+          %)
+        </span>
+      </p>
+      <p
+        className="candidate"
+      >
+        <span
+          className="label cap candidate_pc"
+        >
+           
+          PC
+           
+        </span>
+        <span
+          className="result"
+        >
+          Joe Janega
+           
+          received
+           
+          1696
+           
+          votes (
+          21.88
+          %)
+        </span>
+      </p>
+      <p
+        className="candidate"
+      >
+        <span
+          className="label cap candidate_ndp"
+        >
+           
+          NDP
+           
+        </span>
+        <span
+          className="result"
+        >
+          Bert Lewis
+           
+          received
+           
+          1667
+           
+          votes (
+          21.5
+          %)
+        </span>
+      </p>
+    </div>
+    <p
+      className="totalVotes"
+    >
+      Total votes for this riding:
+      <strong>
+         
+        7753
+      </strong>
+       votes
+    </p>
+  </article>,
+  <article
+    className="riding"
+    id="art_7"
+  >
+    <header
+      className="header"
+    >
+      <h2
+        className="heading"
+      >
+        Riding of: 
+        Chester-St. Margaret’s
+      </h2>
+      <h3
+        className="subheading"
+      >
+        7
+         of 
+        10
+      </h3>
+    </header>
+    <ol
+      className="riding__list"
+    >
+      <li
+        className="party party_ndp winner"
+        style={
+          Object {
+            "height": "87.5px",
+          }
+        }
+      >
+        <span
+          className="cap"
+        >
+          Elected
+        </span>
+        <span
+          className="percentage"
+        >
+          <span
+            className="cap"
+          >
+            NDP
+             
+          </span>
+          35.25
+          %
+        </span>
+      </li>
+      <li
+        className="party party_pc"
+        style={
+          Object {
+            "height": "85px",
+          }
+        }
+      >
+        
+        <span
+          className="percentage"
+        >
+          <span
+            className="cap"
+          >
+            PC
+             
+          </span>
+          33.69
+          %
+        </span>
+      </li>
+      <li
+        className="party party_lib"
+        style={
+          Object {
+            "height": "77.5px",
+          }
+        }
+      >
+        
+        <span
+          className="percentage"
+        >
+          <span
+            className="cap"
+          >
+            LIB
+             
+          </span>
+          31.05
+          %
+        </span>
+      </li>
+    </ol>
+    <div
+      className="ridingSummary"
+    >
+      <p
+        className="candidate candidateWinner"
+      >
+        <span
+          className="label cap candidate_ndp labelWinner"
+        >
+           
+          NDP
+           
+        </span>
+        <span
+          className="result summaryWinner"
+        >
+          Denise Peterson-Rafuse
+           
+          was elected with
+           
+          3341
+           
+          votes (
+          35.25
+          %)
+        </span>
+      </p>
+      <p
+        className="candidate"
+      >
+        <span
+          className="label cap candidate_pc"
+        >
+           
+          PC
+           
+        </span>
+        <span
+          className="result"
+        >
+          Janet Irwin
+           
+          received
+           
+          3193
+           
+          votes (
+          33.69
+          %)
+        </span>
+      </p>
+      <p
+        className="candidate"
+      >
+        <span
+          className="label cap candidate_lib"
+        >
+           
+          LIB
+           
+        </span>
+        <span
+          className="result"
+        >
+          Tim Harris
+           
+          received
+           
+          2943
+           
+          votes (
+          31.05
+          %)
+        </span>
+      </p>
+    </div>
+    <p
+      className="totalVotes"
+    >
+      Total votes for this riding:
+      <strong>
+         
+        9477
+      </strong>
+       votes
+    </p>
+  </article>,
+  <article
+    className="riding"
+    id="art_8"
+  >
+    <header
+      className="header"
+    >
+      <h2
+        className="heading"
+      >
+        Riding of: 
+        Clare-Digby
+      </h2>
+      <h3
+        className="subheading"
+      >
+        8
+         of 
+        10
+      </h3>
+    </header>
+    <ol
+      className="riding__list"
+    >
+      <li
+        className="party party_lib winner"
+        style={
+          Object {
+            "height": "137.5px",
+          }
+        }
+      >
+        <span
+          className="cap"
+        >
+          Elected
+        </span>
+        <span
+          className="percentage"
+        >
+          <span
+            className="cap"
+          >
+            LIB
+             
+          </span>
+          54.68
+          %
+        </span>
+      </li>
+      <li
+        className="party party_pc"
+        style={
+          Object {
+            "height": "77.5px",
+          }
+        }
+      >
+        
+        <span
+          className="percentage"
+        >
+          <span
+            className="cap"
+          >
+            PC
+             
+          </span>
+          31.08
+          %
+        </span>
+      </li>
+      <li
+        className="party party_ndp"
+        style={
+          Object {
+            "height": "22.5px",
+          }
+        }
+      >
+        
+        <span
+          className="percentage"
+        >
+          <span
+            className="cap"
+          >
+            NDP
+             
+          </span>
+          8.99
+          %
+        </span>
+      </li>
+      <li
+        className="party party_ind"
+        style={
+          Object {
+            "height": "12.5px",
+          }
+        }
+      >
+        
+        <span
+          className="percentage"
+        >
+          <span
+            className="cap"
+          >
+            IND
+             
+          </span>
+          5.25
+          %
+        </span>
+      </li>
+    </ol>
+    <div
+      className="ridingSummary"
+    >
+      <p
+        className="candidate candidateWinner"
+      >
+        <span
+          className="label cap candidate_lib labelWinner"
+        >
+           
+          LIB
+           
+        </span>
+        <span
+          className="result summaryWinner"
+        >
+          Gordon Wilson
+           
+          was elected with
+           
+          5122
+           
+          votes (
+          54.68
+          %)
+        </span>
+      </p>
+      <p
+        className="candidate"
+      >
+        <span
+          className="label cap candidate_pc"
+        >
+           
+          PC
+           
+        </span>
+        <span
+          className="result"
+        >
+          Paul Emile LeBlanc
+           
+          received
+           
+          2911
+           
+          votes (
+          31.08
+          %)
+        </span>
+      </p>
+      <p
+        className="candidate"
+      >
+        <span
+          className="label cap candidate_ndp"
+        >
+           
+          NDP
+           
+        </span>
+        <span
+          className="result"
+        >
+          Dean Kenley
+           
+          received
+           
+          842
+           
+          votes (
+          8.99
+          %)
+        </span>
+      </p>
+      <p
+        className="candidate"
+      >
+        <span
+          className="label cap candidate_ind"
+        >
+           
+          IND
+           
+        </span>
+        <span
+          className="result"
+        >
+          Ian Thurber
+           
+          received
+           
+          492
+           
+          votes (
+          5.25
+          %)
+        </span>
+      </p>
+    </div>
+    <p
+      className="totalVotes"
+    >
+      Total votes for this riding:
+      <strong>
+         
+        9367
+      </strong>
+       votes
+    </p>
+  </article>,
+  <article
+    className="riding"
+    id="art_9"
+  >
+    <header
+      className="header"
+    >
+      <h2
+        className="heading"
+      >
+        Riding of: 
+        Clayton Park West
+      </h2>
+      <h3
+        className="subheading"
+      >
+        9
+         of 
+        10
+      </h3>
+    </header>
+    <ol
+      className="riding__list"
+    >
+      <li
+        className="party party_lib winner"
+        style={
+          Object {
+            "height": "167.5px",
+          }
+        }
+      >
+        <span
+          className="cap"
+        >
+          Elected
+        </span>
+        <span
+          className="percentage"
+        >
+          <span
+            className="cap"
+          >
+            LIB
+             
+          </span>
+          67.48
+          %
+        </span>
+      </li>
+      <li
+        className="party party_ndp"
+        style={
+          Object {
+            "height": "45px",
+          }
+        }
+      >
+        
+        <span
+          className="percentage"
+        >
+          <span
+            className="cap"
+          >
+            NDP
+             
+          </span>
+          17.55
+          %
+        </span>
+      </li>
+      <li
+        className="party party_pc"
+        style={
+          Object {
+            "height": "37.5px",
+          }
+        }
+      >
+        
+        <span
+          className="percentage"
+        >
+          <span
+            className="cap"
+          >
+            PC
+             
+          </span>
+          14.98
+          %
+        </span>
+      </li>
+    </ol>
+    <div
+      className="ridingSummary"
+    >
+      <p
+        className="candidate candidateWinner"
+      >
+        <span
+          className="label cap candidate_lib labelWinner"
+        >
+           
+          LIB
+           
+        </span>
+        <span
+          className="result summaryWinner"
+        >
+          Diana Whalen
+           
+          was elected with
+           
+          5569
+           
+          votes (
+          67.48
+          %)
+        </span>
+      </p>
+      <p
+        className="candidate"
+      >
+        <span
+          className="label cap candidate_ndp"
+        >
+           
+          NDP
+           
+        </span>
+        <span
+          className="result"
+        >
+          Blake Wright
+           
+          received
+           
+          1448
+           
+          votes (
+          17.55
+          %)
+        </span>
+      </p>
+      <p
+        className="candidate"
+      >
+        <span
+          className="label cap candidate_pc"
+        >
+           
+          PC
+           
+        </span>
+        <span
+          className="result"
+        >
+          Jaime Allen
+           
+          received
+           
+          1236
+           
+          votes (
+          14.98
+          %)
+        </span>
+      </p>
+    </div>
+    <p
+      className="totalVotes"
+    >
+      Total votes for this riding:
+      <strong>
+         
+        8253
+      </strong>
+       votes
+    </p>
+  </article>,
+  <article
+    className="riding"
+    id="art_10"
+  >
+    <header
+      className="header"
+    >
+      <h2
+        className="heading"
+      >
+        Riding of: 
+        Colchester-Musquodoboit Valley
+      </h2>
+      <h3
+        className="subheading"
+      >
+        10
+         of 
+        10
+      </h3>
+    </header>
+    <ol
+      className="riding__list"
+    >
+      <li
+        className="party party_pc winner"
+        style={
+          Object {
+            "height": "105px",
+          }
+        }
+      >
+        <span
+          className="cap"
+        >
+          Elected
+        </span>
+        <span
+          className="percentage"
+        >
+          <span
+            className="cap"
+          >
+            PC
+             
+          </span>
+          42.27
+          %
+        </span>
+      </li>
+      <li
+        className="party party_ndp"
+        style={
+          Object {
+            "height": "72.5px",
+          }
+        }
+      >
+        
+        <span
+          className="percentage"
+        >
+          <span
+            className="cap"
+          >
+            NDP
+             
+          </span>
+          29.33
+          %
+        </span>
+      </li>
+      <li
+        className="party party_lib"
+        style={
+          Object {
+            "height": "70px",
+          }
+        }
+      >
+        
+        <span
+          className="percentage"
+        >
+          <span
+            className="cap"
+          >
+            LIB
+             
+          </span>
+          28.4
+          %
+        </span>
+      </li>
+    </ol>
+    <div
+      className="ridingSummary"
+    >
+      <p
+        className="candidate candidateWinner"
+      >
+        <span
+          className="label cap candidate_pc labelWinner"
+        >
+           
+          PC
+           
+        </span>
+        <span
+          className="result summaryWinner"
+        >
+          Larry Harrison
+           
+          was elected with
+           
+          3304
+           
+          votes (
+          42.27
+          %)
+        </span>
+      </p>
+      <p
+        className="candidate"
+      >
+        <span
+          className="label cap candidate_ndp"
+        >
+           
+          NDP
+           
+        </span>
+        <span
+          className="result"
+        >
+          Gary Burrill
+           
+          received
+           
+          2293
+           
+          votes (
+          29.33
+          %)
+        </span>
+      </p>
+      <p
+        className="candidate"
+      >
+        <span
+          className="label cap candidate_lib"
+        >
+           
+          LIB
+           
+        </span>
+        <span
+          className="result"
+        >
+          Tom Martin
+           
+          received
+           
+          2220
+           
+          votes (
+          28.4
+          %)
+        </span>
+      </p>
+    </div>
+    <p
+      className="totalVotes"
+    >
+      Total votes for this riding:
+      <strong>
+         
+        7817
+      </strong>
+       votes
+    </p>
+  </article>,
+]
+`;
 
 exports[`Ridings component rendering tests should render a riding card 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Ridings
-    moreInput={Array []}
+    allRidings={Array []}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -16,9 +1977,9 @@ ShallowWrapper {
     "simulateEvent": [Function],
     "unmount": [Function],
   },
-  Symbol(enzyme.__node__): null,
+  Symbol(enzyme.__node__): Array [],
   Symbol(enzyme.__nodes__): Array [
-    null,
+    Array [],
   ],
   Symbol(enzyme.__options__): Object {
     "adapter": ReactSixteenAdapter {
