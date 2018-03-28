@@ -73,7 +73,7 @@
     "format": "./node_modules/prettier/bin/prettier.js ignore-path ./.prettierignore --write '**/*.{js,jsx}'",
     "lint:js": "./node_modules/eslint/bin/eslint.js -c .eslintrc --ext .js src/ webpack.*.js --quiet",
     "test": "./node_modules/jest/bin/jest.js",
-    "travis": "yarn run lint:js && yarn test -u && yarn run test",
+    "travis": "yarn run lint:js && yarn test -u",
     "prebuild:production": "yarn run format && yarn run lint:js"
   }
 }

@@ -1,4 +1,4 @@
-[
+export const Results = [
 		{
 			"id": 1,
 			"name": "Annapolis",
