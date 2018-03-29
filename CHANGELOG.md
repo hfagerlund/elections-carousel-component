@@ -13,7 +13,7 @@
 * Fixes ESLint configuration (sets to [Jest](https://github.com/facebook/jest) environment)
 
 ### Fixed:
-* Issue #1: Long riding names overlapped by 'Next' button
+* Issue [#1](https://github.com/hfagerlund/elections-carousel-component/issues/1): Long riding names overlapped by 'Next' button
 * Test improvements: 
  * automates code formatting of tests
  * removes/updates obsolete Jest snapshots
