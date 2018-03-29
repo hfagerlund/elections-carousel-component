@@ -2,7 +2,7 @@
  * 
  *    elections-carousel-component - API-based React carousel component
  *    @author: Heini Fagerlund
- *    @version: 0.1.0
+ *    @version: 0.1.1
  *    @repository: https://github.com/hfagerlund/elections-carousel-component/
  *    @license(s): BSD-3-Clause
  * 
