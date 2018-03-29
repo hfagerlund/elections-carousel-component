@@ -2,10 +2,10 @@
 
 - - -
 ## Unreleased
-*(last updated: 2018-03-24)*
+*(last updated: 2018-03-29)*
 
 ### New features:
-* Demo page at: https://hfagerlund.github.io/elections-carousel-component/
+* Adds [demo page](https://hfagerlund.github.io/elections-carousel-component/)
 * Riding/slide number display - (example: 8 of 10)
 
 ### Changed:
@@ -13,7 +13,11 @@
 * Fixes ESLint configuration (sets to [Jest](https://github.com/facebook/jest) environment)
 
 ### Fixed:
-* Test improvements: automates code formatting of tests
+* Issue #1: Long riding names overlapped by 'Next' button
+* Test improvements: 
+ * automates code formatting of tests
+ * removes/updates obsolete Jest snapshots
+ * correction to mock results (make props available to tests)
 
 - - -
 ## Releases
