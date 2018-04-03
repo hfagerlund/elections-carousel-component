@@ -6,6 +6,8 @@ Carousel presentation of data from a JSON feed of election results.
 
 Enables scrolling through the election results for all ridings using the Next and Back controls (via mouse or keyboard), displaying the number of votes and automatically calculating the percentage of the vote won by each candidate in each riding.
 
+Results data is automatically checked for updates every 5 minutes (by [default](https://github.com/hfagerlund/elections-carousel-component#customizable-options)).
+
 <img style="max-width:100%;" alt="Screenshot of elections-carousel-component on a page" src="/screenshots/screenshot_elections-html.png" align="center" /><br />
 *Figure 1: screenshot of elections.html page*
 
@@ -33,6 +35,56 @@ $ http-server
 
 ```
 
+- - -
+
+## Usage
+### Customizable Options
+
+| Parameter | Type<br><a id="default" name="default">(Default value) | Description |
+| --- | --- | --- |
+| **componentTitle** | `string`<br>*default value:* `Election Results` | Main `<h1>` heading/title text (in the `<App />` component) |
+| **resultUpdatesEnabled** | `bool`<br>*default value:* `true` | Set to `true`|`false` to enable|disable automatic data updates from the (JSON) feed. |
+| **updatesDisabledMessage** | `string`<br>*default value:* `Final results reported. All polls are now closed.` | Text displayed in the updates status 'bubble' (ie. directly following the `<h1>` heading) when automatic data updates from the (JSON) feed are disabled. |
+| **updateIntervalInMilliseconds** | `integer`<br>*default value:* `300000` (ie. 5 mins.) | Time intervals (in msec) at which the (JSON) feed is checked for data updates |
+| **url** | `string`<br>*default value:* `http://127.0.0.1:8080/src/assets/fixtures/results.js?callback=` | The URL for the (JSON) data feed |
+
+### Examples
+
+**Example 1** - To display a (custom) title of '2011 Election Results', with the status message 'Final results reported. All polls are now closed.', modify `index.jsx` as shown below:
+
+**/src/js/elections/index.jsx** -
+```
+import React from 'react';
+import { render } from 'react-dom';
+
+import App from './components/App.jsx';
+
+render(
+  <App
+    componentTitle="2011 Election Results"
+    resultUpdatesEnabled={false}
+  />,
+  document.getElementById('app')
+);
+```
+
+**Example 2** - Update data results at 3 minute intervals (instead of the default 5 mins.):
+
+**/src/js/elections/index.jsx** -
+```
+// ...
+
+render(<App updateIntervalInMilliseconds={180000} />, document.getElementById('app'));
+```
+
+**Example 3** - Use all default settings:
+
+**/src/js/elections/index.jsx** -
+```
+// ...
+
+render(<App />, document.getElementById('app'));
+```
 - - -
 
 ## Running the Build

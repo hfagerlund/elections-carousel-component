@@ -1,7 +1,8 @@
 import App from '../src/js/elections/components/App';
 import Ridings from '../src/js/elections/components/Ridings';
 import Controls from '../src/js/elections/components/Controls';
-import React from 'react';
+import React, { Fragment } from 'react';
+import { Results } from '../src/assets/fixtures/mock-results.js';
 
 import { shallow, mount } from 'enzyme';
 import TestUtils from 'react-dom/test-utils';
@@ -11,9 +12,10 @@ import { spy } from 'sinon';
 describe('App component', () => {
   describe('rendering tests', () => {
     it('renders expected main heading', () => {
-      var app = TestUtils.renderIntoDocument(<App />);
+      const customComponentTitle = 'Custom Title';
+      var app = TestUtils.renderIntoDocument(<App componentTitle={customComponentTitle} />);
       var mainHeading = TestUtils.findRenderedDOMComponentWithTag(app, 'h1');
-      expect(mainHeading.textContent).equal('2011 Election Results');
+      expect(mainHeading.textContent).equal(customComponentTitle);
     });
 
     it('should show a single wrapper div', () => {
@@ -70,6 +72,37 @@ describe('App component', () => {
       const controls = wrapper.find(Controls);
       const callBack = wrapper.instance().callBack;
       expect(controls.prop('callback')).to.eql(callBack);
+    });
+  });
+
+  describe('test other functions return values', () => {
+    it('returns ridings from getInitialState function', () => {
+      const wrapper = shallow(<App />);
+      expect(wrapper.instance().getInitialState()).to.eql({ ridings: [] });
+    });
+
+    it('returns updatesDisabledMessage prop from renderUpdatesDisabledMessage function', () => {
+      const string = 'Polls are closed';
+      const wrapper = shallow(<App updatesDisabledMessage={string} />);
+      expect(wrapper.instance().renderUpdatesDisabledMessage()).to.eql(string);
+    });
+
+    it('returns allRidingsVoteTotals from totalVotes function', () => {
+      const allRidingsVoteTotals = [10160, 9073, 7195, 10023, 7595, 7753, 9477, 9367, 8253, 7817];
+      const apiJson = Results;
+      const wrapper = shallow(<App />);
+      expect(wrapper.instance().totalVotes(apiJson)).to.eql(allRidingsVoteTotals);
+    });
+
+    it('returns last updated info from renderUpdatesEnabledMessage function', () => {
+      const datetime = '1990-01-01T00:00:00.000Z';
+      const date = 'Thu, 01 Jan 1990 00:00:00 GMT';
+      const wrapper = mount(<App />);
+      expect(wrapper.instance().renderUpdatesEnabledMessage(datetime, date)).to.eql(
+        <Fragment>
+          Last updated: <time dateTime={datetime}>{date}</time>
+        </Fragment>
+      );
     });
   });
 });
