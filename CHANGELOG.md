@@ -2,7 +2,25 @@
 
 - - -
 ## Unreleased
-*(last updated: 2018-03-29)*
+*(last updated: 2018-04-02)*
+
+## 0.2.0 - 2018-04-02
+
+### New features:
+* Issue [#3](https://github.com/hfagerlund/elections-carousel-component/issues/3): Automatic data updates
+* List of new [customizable options](https://github.com/hfagerlund/elections-carousel-component#customizable-options)
+
+### Changed:
+* Vertical spacing of `<h1>` and Ridings component (to accomodate new display for data update status)
+* Test improvements (includes better coverage)
+
+### Fixed:
+* [Code cleanup, refactoring](https://github.com/hfagerlund/elections-carousel-component/blob/master/src/js/elections/components/App.jsx)
+
+- - -
+## Releases
+
+## 0.1.1 - 2018-03-29
 
 ### New features:
 * Adds [demo page](https://hfagerlund.github.io/elections-carousel-component/)
@@ -20,8 +38,6 @@
  * correction to mock results (make props available to tests)
 
 - - -
-## Releases
-
 ## 0.1.0 - 2018-03-21 
 * Initial version, built using pure [React (v16.2.0)](https://github.com/facebook/react).
 

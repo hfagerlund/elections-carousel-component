@@ -1,4 +1,5 @@
 .prettierignore
+coverage
 dist/js/**/*
 docs/**/*
 src/assets/fixtures/*
