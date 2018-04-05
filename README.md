@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/hfagerlund/elections-carousel-component.svg?branch=master)](https://travis-ci.org/hfagerlund/elections-carousel-component) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/0c79a9df9e7c4847b1de77099bae58d4)](https://www.codacy.com/app/hfagerlund/elections-carousel-component?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=hfagerlund/elections-carousel-component&amp;utm_campaign=Badge_Grade) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
-Carousel presentation of data from a JSON feed of election results.
+A component-based carousel presentation of election results data from an external (JSON) API using pure [React](https://github.com/facebook/react).
 
 Enables scrolling through the election results for all ridings using the Next and Back controls (via mouse or keyboard), displaying the number of votes and automatically calculating the percentage of the vote won by each candidate in each riding.
 
@@ -39,8 +39,9 @@ $ http-server
 
 ## Usage
 ### Customizable Options
+The following props can be set on the `App` component in order to customize it:
 
-| Parameter | Type<br><a id="default" name="default">(Default value) | Description |
+| Prop | Type<br><a id="default" name="default">(Default value) | Description |
 | --- | --- | --- |
 | **componentTitle** | `string`<br>*default value:* `Election Results` | Main `<h1>` heading/title text (in the `<App />` component) |
 | **resultUpdatesEnabled** | `bool`<br>*default value:* `true` | Set to `true`|`false` to enable|disable automatic data updates from the (JSON) feed. |
@@ -50,9 +51,9 @@ $ http-server
 
 ### Examples
 
-**Example 1** - To display a (custom) title of '2011 Election Results', with the status message 'Final results reported. All polls are now closed.', modify `index.jsx` as shown below:
+**Example 1** - To display a (custom) title of '2011 Election Results', with the (default) status message 'Final results reported. All polls are now closed.', modify `/src/js/elections/index.jsx` as shown below:
 
-**/src/js/elections/index.jsx** -
+**index.jsx** -
 ```
 import React from 'react';
 import { render } from 'react-dom';
@@ -70,7 +71,7 @@ render(
 
 **Example 2** - Update data results at 3 minute intervals (instead of the default 5 mins.):
 
-**/src/js/elections/index.jsx** -
+**index.jsx** -
 ```
 // ...
 
@@ -79,7 +80,7 @@ render(<App updateIntervalInMilliseconds={180000} />, document.getElementById('a
 
 **Example 3** - Use all default settings:
 
-**/src/js/elections/index.jsx** -
+**[index.jsx](https://github.com/hfagerlund/elections-carousel-component/blob/master/src/js/elections/index.jsx)** -
 ```
 // ...
 

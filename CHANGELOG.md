@@ -2,7 +2,13 @@
 
 - - -
 ## Unreleased
-*(last updated: 2018-04-02)*
+*(last updated: 2018-04-05)*
+
+### Fixed:
+* Documentation improvements: [README](https://github.com/hfagerlund/elections-carousel-component/blob/master/README.md) updates
+
+- - -
+## Releases
 
 ## 0.2.0 - 2018-04-02
 
@@ -18,8 +24,6 @@
 * [Code cleanup, refactoring](https://github.com/hfagerlund/elections-carousel-component/blob/master/src/js/elections/components/App.jsx)
 
 - - -
-## Releases
-
 ## 0.1.1 - 2018-03-29
 
 ### New features:
