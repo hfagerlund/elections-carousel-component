@@ -12,11 +12,17 @@ import css from './ridings.scss';
 
 export default class Ridings extends React.Component {
   render() {
-    const numberOfRidings = this.props.allRidings ? this.props.allRidings.length : null;
+    const numberOfRidings = this.props.allRidings
+      ? this.props.allRidings.length
+      : null;
 
     const ridings = this.props.allRidings
       ? this.props.allRidings.map(riding => (
-          <article key={`art_${riding.id}`} className={css.riding} id={`art_${riding.id}`}>
+          <article
+            key={`art_${riding.id}`}
+            className={css.riding}
+            id={`art_${riding.id}`}
+          >
             {
               <Fragment>
                 <RidingHeader
@@ -33,7 +39,10 @@ export default class Ridings extends React.Component {
 
                 <TextSummary riding={riding} key={riding.name} />
 
-                <TotalVotes riding={riding} key={`voteTotal_riding-${riding.id}`} />
+                <TotalVotes
+                  riding={riding}
+                  key={`voteTotal_riding-${riding.id}`}
+                />
               </Fragment>
             }
           </article>

@@ -13,7 +13,9 @@ describe('App component', () => {
   describe('rendering tests', () => {
     it('renders expected main heading', () => {
       const customComponentTitle = 'Custom Title';
-      var app = TestUtils.renderIntoDocument(<App componentTitle={customComponentTitle} />);
+      var app = TestUtils.renderIntoDocument(
+        <App componentTitle={customComponentTitle} />
+      );
       var mainHeading = TestUtils.findRenderedDOMComponentWithTag(app, 'h1');
       expect(mainHeading.textContent).equal(customComponentTitle);
     });
@@ -37,14 +39,20 @@ describe('App component', () => {
 
     it('has one Ridings component', function() {
       var component = TestUtils.renderIntoDocument(<App />);
-      var childComponents = TestUtils.scryRenderedComponentsWithType(component, Ridings);
+      var childComponents = TestUtils.scryRenderedComponentsWithType(
+        component,
+        Ridings
+      );
 
       expect(childComponents.length).equal(1);
     });
 
     it('has one Controls component', function() {
       var component = TestUtils.renderIntoDocument(<App />);
-      var childComponents = TestUtils.scryRenderedComponentsWithType(component, Controls);
+      var childComponents = TestUtils.scryRenderedComponentsWithType(
+        component,
+        Controls
+      );
 
       expect(childComponents.length).equal(1);
     });
@@ -88,17 +96,32 @@ describe('App component', () => {
     });
 
     it('returns allRidingsVoteTotals from totalVotes function', () => {
-      const allRidingsVoteTotals = [10160, 9073, 7195, 10023, 7595, 7753, 9477, 9367, 8253, 7817];
+      const allRidingsVoteTotals = [
+        10160,
+        9073,
+        7195,
+        10023,
+        7595,
+        7753,
+        9477,
+        9367,
+        8253,
+        7817
+      ];
       const apiJson = Results;
       const wrapper = shallow(<App />);
-      expect(wrapper.instance().totalVotes(apiJson)).to.eql(allRidingsVoteTotals);
+      expect(wrapper.instance().totalVotes(apiJson)).to.eql(
+        allRidingsVoteTotals
+      );
     });
 
     it('returns last updated info from renderUpdatesEnabledMessage function', () => {
       const datetime = '1990-01-01T00:00:00.000Z';
       const date = 'Thu, 01 Jan 1990 00:00:00 GMT';
       const wrapper = mount(<App />);
-      expect(wrapper.instance().renderUpdatesEnabledMessage(datetime, date)).to.eql(
+      expect(
+        wrapper.instance().renderUpdatesEnabledMessage(datetime, date)
+      ).to.eql(
         <Fragment>
           Last updated: <time dateTime={datetime}>{date}</time>
         </Fragment>

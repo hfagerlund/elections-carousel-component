@@ -31,7 +31,9 @@ export default class App extends React.Component {
     var updatedSlidesPosition = -(slideWidth * clicks);
 
     if (clicks >= 0 && clicks < this.state.maxClicks) {
-      this.setState({ slidesNewPosition: initialPosition + updatedSlidesPosition });
+      this.setState({
+        slidesNewPosition: initialPosition + updatedSlidesPosition
+      });
     }
   }
 
@@ -43,7 +45,10 @@ export default class App extends React.Component {
 
   enableUpdateTimer() {
     var _this = this;
-    setTimeout(_this.getElectionsResults, _this.props.updateIntervalInMilliseconds); //milliseconds
+    setTimeout(
+      _this.getElectionsResults,
+      _this.props.updateIntervalInMilliseconds
+    ); //milliseconds
   }
 
   getElectionsResults() {
@@ -119,12 +124,20 @@ export default class App extends React.Component {
     return (
       <Fragment>
         <h1 className={css.heading}>{this.props.componentTitle}</h1>
-        <p aria-atomic="true" aria-live="polite" className={css.update} role="status">
+        <p
+          aria-atomic="true"
+          aria-live="polite"
+          className={css.update}
+          role="status"
+        >
           {this.props.resultUpdatesEnabled
             ? this.renderUpdatesEnabledMessage(datetime, date)
             : this.renderUpdatesDisabledMessage()}
         </p>
-        <div className={css.wrapper} style={{ left: this.state.slidesNewPosition + 'px' }}>
+        <div
+          className={css.wrapper}
+          style={{ left: this.state.slidesNewPosition + 'px' }}
+        >
           <Ridings allRidings={this.state.ridings} />
         </div>
 

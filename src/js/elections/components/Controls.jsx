@@ -53,13 +53,19 @@ export default class Controls extends React.Component {
           //demo of inline syntax (versus click handler 'handleClick())
           onClick={() => {
             if (this.props.count < this.props.maxCount - 1) {
-              this.setState({ nextButtonDisabled: false, prevButtonDisabled: false });
+              this.setState({
+                nextButtonDisabled: false,
+                prevButtonDisabled: false
+              });
               this.props.callback(this.props.count + 1);
               this.props.position(this.props.count + 1);
             }
 
             if (this.props.count >= this.props.maxCount - 2) {
-              this.setState({ nextButtonDisabled: true, prevButtonDisabled: false });
+              this.setState({
+                nextButtonDisabled: true,
+                prevButtonDisabled: false
+              });
             }
           }}
         />
