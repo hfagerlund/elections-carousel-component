@@ -22,8 +22,7 @@ exports[`TextSummary component matches its snapshot with riding data 1`] = `
       received
        
       834
-       
-      votes (
+       votes (
       8.21
       %)
     </span>
@@ -46,8 +45,7 @@ exports[`TextSummary component matches its snapshot with riding data 1`] = `
       was elected with
        
       7709
-       
-      votes (
+       votes (
       75.88
       %)
     </span>
@@ -70,8 +68,7 @@ exports[`TextSummary component matches its snapshot with riding data 1`] = `
       received
        
       1390
-       
-      votes (
+       votes (
       13.68
       %)
     </span>
@@ -94,8 +91,7 @@ exports[`TextSummary component matches its snapshot with riding data 1`] = `
       received
        
       227
-       
-      votes (
+       votes (
       2.23
       %)
     </span>

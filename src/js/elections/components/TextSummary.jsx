@@ -14,14 +14,18 @@ export default class TextSummary extends React.Component {
 
   render() {
     const totalVotes = this.props.riding.results
-      ? this.props.riding.results.map(results => results.votes).reduce((a, b) => a + b, 0)
+      ? this.props.riding.results
+          .map(results => results.votes)
+          .reduce((a, b) => a + b, 0)
       : null;
 
     const listCandidates = this.props.riding.results
       ? this.props.riding.results.map(results => (
           <p
             key={results.name}
-            className={`${css['candidate']}${results.isElected ? ' candidateWinner' : ''}`}
+            className={`${css['candidate']}${
+              results.isElected ? ' candidateWinner' : ''
+            }`}
           >
             <span
               className={`label cap candidate_${results.partyCode.toLowerCase()}${
@@ -32,9 +36,16 @@ export default class TextSummary extends React.Component {
               {results.partyCode}{' '}
             </span>
 
-            <span className={`${css['result']}${results.isElected ? ' summaryWinner' : ''}`}>
-              {results.name} {results.isElected ? 'was elected with' : 'received'} {results.votes}{' '}
-              votes ({this._roundToTwoDec(results.votes / totalVotes * 100)}%)
+            <span
+              className={`${css['result']}${
+                results.isElected ? ' summaryWinner' : ''
+              }`}
+            >
+              {results.name}{' '}
+              {results.isElected ? 'was elected with' : 'received'}{' '}
+              {results.votes} votes ({this._roundToTwoDec(
+                results.votes / totalVotes * 100
+              )}%)
             </span>
           </p>
         ))
