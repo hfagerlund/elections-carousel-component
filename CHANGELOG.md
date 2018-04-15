@@ -2,7 +2,10 @@
 
 - - -
 ## Unreleased
-*(last updated: 2018-04-05)*
+*(last updated: 2018-04-15)*
+
+### Changed:
+* Issue [#5 - Tests: Improve coverage](https://github.com/hfagerlund/elections-carousel-component/issues/5) - *work in progress*
 
 ### Fixed:
 * Documentation improvements: [README](https://github.com/hfagerlund/elections-carousel-component/blob/master/README.md) updates
