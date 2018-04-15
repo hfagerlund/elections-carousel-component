@@ -10,7 +10,7 @@ test('TextSummary component renders a riding summary', () => {
 });
 
 test('TextSummary component matches its snapshot with riding data', () => {
-  var ridings = {
+  const ridings = {
     id: 1,
     name: 'Annapolis',
     num: 1,

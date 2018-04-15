@@ -8,8 +8,8 @@ import TestUtils from 'react-dom/test-utils';
 describe('RidingHeader component', () => {
   describe('rendering tests', () => {
     it('renders heading containing expected text', () => {
-      var app = TestUtils.renderIntoDocument(<RidingHeader />);
-      var heading = TestUtils.findRenderedDOMComponentWithTag(app, 'h2');
+      const app = TestUtils.renderIntoDocument(<RidingHeader />);
+      const heading = TestUtils.findRenderedDOMComponentWithTag(app, 'h2');
       expect(heading.textContent).contain('Riding of:');
     });
 
