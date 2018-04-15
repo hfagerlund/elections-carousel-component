@@ -30,19 +30,12 @@ describe('Bar component', () => {
 
     it('returns span element as a child of its (child) li element', () => {
       const wrapper = mount(<Bar {...BAR_PROPS} />);
-      expect(
-        wrapper
-          .find('li')
-          .first()
-          .childAt(0)
-          .type()
-      ).to.equal('span');
-      expect(
-        wrapper
-          .find('li')
-          .first()
-          .childAt(0)
-      ).to.have.length(1);
+      const firstChild = wrapper
+        .find('li')
+        .first()
+        .childAt(0);
+      expect(firstChild.type()).to.equal('span');
+      expect(firstChild).to.have.length(1);
     });
 
     it('returns exactly one span element as a child of each (child) li element', () => {
