@@ -13,7 +13,7 @@ describe('TotalVotes component', () => {
     });
 
     it('should match its snapshot with riding data', () => {
-      var ridings = {
+      const ridings = {
         id: 1,
         name: 'Annapolis',
         num: 1,

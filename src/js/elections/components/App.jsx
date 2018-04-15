@@ -26,9 +26,9 @@ export default class App extends React.Component {
   }
 
   getNewPosition(clicks) {
-    var slideWidth = 600; //measured in px
-    var initialPosition = 0;
-    var updatedSlidesPosition = -(slideWidth * clicks);
+    const slideWidth = 600; //measured in px
+    const initialPosition = 0;
+    const updatedSlidesPosition = -(slideWidth * clicks);
 
     if (clicks >= 0 && clicks < this.state.maxClicks) {
       this.setState({ slidesNewPosition: initialPosition + updatedSlidesPosition });
@@ -42,16 +42,16 @@ export default class App extends React.Component {
   }
 
   enableUpdateTimer() {
-    var _this = this;
+    const _this = this;
     setTimeout(_this.getElectionsResults, _this.props.updateIntervalInMilliseconds); //milliseconds
   }
 
   getElectionsResults() {
-    var _this = this;
-    var voteTotals = 0;
-    var callbackName = 'gNews_getRidingDetailsCallback';
-    var timestamp = Date.now();
-    var script = document.createElement('script');
+    const _this = this;
+    let voteTotals = 0;
+    const callbackName = 'gNews_getRidingDetailsCallback';
+    const timestamp = Date.now();
+    const script = document.createElement('script');
     script.src = _this.props.url + callbackName + '&_=' + timestamp;
 
     window[callbackName] = function(jsonData) {
@@ -81,8 +81,8 @@ export default class App extends React.Component {
 
   totalVotes(apiJson) {
     let allRidingsVoteTotals = apiJson.map(riding => {
-      var ridingVoteTotal = 0;
-      var votesForRiding = riding.results.map(candidate => {
+      let ridingVoteTotal = 0;
+      const votesForRiding = riding.results.map(candidate => {
         return candidate.votes;
       });
       ridingVoteTotal = votesForRiding.reduce(this.add, 0);
@@ -112,9 +112,9 @@ export default class App extends React.Component {
   }
 
   render() {
-    var unixTimestamp = this.state.lastUpdated;
-    var date = new Date(unixTimestamp).toUTCString();
-    var datetime = new Date(unixTimestamp).toISOString();
+    const unixTimestamp = this.state.lastUpdated;
+    const date = new Date(unixTimestamp).toUTCString();
+    const datetime = new Date(unixTimestamp).toISOString();
 
     return (
       <Fragment>

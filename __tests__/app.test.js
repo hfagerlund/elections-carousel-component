@@ -13,8 +13,8 @@ describe('App component', () => {
   describe('rendering tests', () => {
     it('renders expected main heading', () => {
       const customComponentTitle = 'Custom Title';
-      var app = TestUtils.renderIntoDocument(<App componentTitle={customComponentTitle} />);
-      var mainHeading = TestUtils.findRenderedDOMComponentWithTag(app, 'h1');
+      const app = TestUtils.renderIntoDocument(<App componentTitle={customComponentTitle} />);
+      const mainHeading = TestUtils.findRenderedDOMComponentWithTag(app, 'h1');
       expect(mainHeading.textContent).equal(customComponentTitle);
     });
 
@@ -36,15 +36,15 @@ describe('App component', () => {
     });
 
     it('has one Ridings component', function() {
-      var component = TestUtils.renderIntoDocument(<App />);
-      var childComponents = TestUtils.scryRenderedComponentsWithType(component, Ridings);
+      const component = TestUtils.renderIntoDocument(<App />);
+      const childComponents = TestUtils.scryRenderedComponentsWithType(component, Ridings);
 
       expect(childComponents.length).equal(1);
     });
 
     it('has one Controls component', function() {
-      var component = TestUtils.renderIntoDocument(<App />);
-      var childComponents = TestUtils.scryRenderedComponentsWithType(component, Controls);
+      const component = TestUtils.renderIntoDocument(<App />);
+      const childComponents = TestUtils.scryRenderedComponentsWithType(component, Controls);
 
       expect(childComponents.length).equal(1);
     });
