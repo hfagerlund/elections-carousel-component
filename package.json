@@ -58,9 +58,11 @@
     "sinon": "^4.2.0"
   },
   "jest": {
+    "coveragePathIgnorePatterns": ["<rootDir>/test-setup.js", "<rootDir>/src/assets/fixtures/", "<rootDir>/node_modules/"],
     "moduleNameMapper": {
       "^.+\\.(css|scss)$": "identity-obj-proxy"
     },
+    "testPathIgnorePatterns": ["<rootDir>/test-setup.js", "<rootDir>/src/assets/fixtures/", "<rootDir>/node_modules/"],
     "transform": {
       ".*": "./node_modules/jest-css-modules"
     },
