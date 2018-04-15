@@ -44,5 +44,5 @@ export default class Ridings extends React.Component {
 }
 
 Ridings.propTypes = {
-  allRidings: PropTypes.array
+  allRidings: PropTypes.array.isRequired
 };

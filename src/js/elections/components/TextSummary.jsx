@@ -45,5 +45,5 @@ export default class TextSummary extends React.Component {
 }
 
 TextSummary.propTypes = {
-  riding: PropTypes.object
+  riding: PropTypes.object.isRequired
 };

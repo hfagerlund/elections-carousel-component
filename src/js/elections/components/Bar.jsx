@@ -40,5 +40,5 @@ export default class Bar extends React.Component {
 }
 
 Bar.propTypes = {
-  ridingResults: PropTypes.array
+  ridingResults: PropTypes.array.isRequired
 };
