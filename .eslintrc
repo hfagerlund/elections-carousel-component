@@ -10,7 +10,9 @@
     "plugin:prettier/recommended"
   ],
   "globals": {
-    "document": false
+    "document": false,
+    "global": false,
+    "testRiding": false
   },
   parser: "babel-eslint",
   "parserOptions": {

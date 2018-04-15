@@ -59,6 +59,7 @@
   },
   "jest": {
     "coveragePathIgnorePatterns": ["<rootDir>/test-setup.js", "<rootDir>/src/assets/fixtures/", "<rootDir>/node_modules/"],
+    "setupFiles": ["<rootDir>/test-globals.js"],
     "moduleNameMapper": {
       "^.+\\.(css|scss)$": "identity-obj-proxy"
     },
