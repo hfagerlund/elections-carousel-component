@@ -12,13 +12,16 @@ export default class TextSummary extends React.Component {
     return +(Math.round(num + 'e+2') + 'e-2');
   }
 
-  render() {
-    const totalVotes = this.props.riding.results
-      ? this.props.riding.results.map(results => results.votes).reduce((a, b) => a + b, 0)
+  _getTotalVotes(riding) {
+    const totalVotes = riding
+      ? riding.map(results => results.votes).reduce((a, b) => a + b, 0)
       : null;
+    return totalVotes;
+  }
 
-    const listCandidates = this.props.riding.results
-      ? this.props.riding.results.map(results => (
+  getCandidates(riding) {
+    const listCandidates = riding
+      ? riding.map(results => (
           <p
             key={results.name}
             className={`${css['candidate']}${results.isElected ? ' candidateWinner' : ''}`}
@@ -34,13 +37,16 @@ export default class TextSummary extends React.Component {
 
             <span className={`${css['result']}${results.isElected ? ' summaryWinner' : ''}`}>
               {results.name} {results.isElected ? 'was elected with' : 'received'} {results.votes}{' '}
-              votes ({this._roundToTwoDec(results.votes / totalVotes * 100)}%)
+              votes ({this._roundToTwoDec(results.votes / this._getTotalVotes(riding) * 100)}%)
             </span>
           </p>
         ))
       : null;
+    return listCandidates;
+  }
 
-    return <div className={css.ridingSummary}>{listCandidates}</div>;
+  render() {
+    return <div className={css.ridingSummary}>{this.getCandidates(this.props.riding.results)}</div>;
   }
 }
 
