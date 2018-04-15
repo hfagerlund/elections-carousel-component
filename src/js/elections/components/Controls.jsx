@@ -11,10 +11,23 @@ export default class Controls extends React.Component {
       prevButtonDisabled: true,
       nextButtonDisabled: false
     };
-    this.handleClick = this.handleClick.bind(this);
+    this.handleClickPrevious = this.handleClickPrevious.bind(this);
+    this.handleClickNext = this.handleClickNext.bind(this);
   }
 
-  handleClick() {
+  handleClickNext() {
+    if (this.props.count < this.props.maxCount - 1) {
+      this.setState({ nextButtonDisabled: false, prevButtonDisabled: false });
+      this.props.callback(this.props.count + 1);
+      this.props.position(this.props.count + 1);
+    }
+
+    if (this.props.count >= this.props.maxCount - 2) {
+      this.setState({ nextButtonDisabled: true, prevButtonDisabled: false });
+    }
+  }
+
+  handleClickPrevious() {
     if (this.props.count > 0) {
       this.props.callback(this.props.count - 1);
       this.props.position(this.props.count - 1);
@@ -40,7 +53,7 @@ export default class Controls extends React.Component {
             css.ctrlBack,
             this.state.prevButtonDisabled ? 'ctrlDisabled' : ''
           ].join(' ')}
-          onClick={this.handleClick}
+          onClick={this.handleClickPrevious}
         />
         <button
           aria-label="Next riding"
@@ -50,18 +63,7 @@ export default class Controls extends React.Component {
             css.ctrlNext,
             this.state.nextButtonDisabled ? 'ctrlDisabled' : ''
           ].join(' ')}
-          //demo of inline syntax (versus click handler 'handleClick())
-          onClick={() => {
-            if (this.props.count < this.props.maxCount - 1) {
-              this.setState({ nextButtonDisabled: false, prevButtonDisabled: false });
-              this.props.callback(this.props.count + 1);
-              this.props.position(this.props.count + 1);
-            }
-
-            if (this.props.count >= this.props.maxCount - 2) {
-              this.setState({ nextButtonDisabled: true, prevButtonDisabled: false });
-            }
-          }}
+          onClick={this.handleClickNext}
         />
       </div>
     );

@@ -11,11 +11,14 @@ import TotalVotes from './TotalVotes.jsx';
 import css from './ridings.scss';
 
 export default class Ridings extends React.Component {
-  render() {
-    const numberOfRidings = this.props.allRidings ? this.props.allRidings.length : null;
+  _getNumberOfRidings(allRidings) {
+    const numberOfRidings = allRidings ? allRidings.length : null;
+    return numberOfRidings;
+  }
 
-    const ridings = this.props.allRidings
-      ? this.props.allRidings.map(riding => (
+  getRidings(allRidings) {
+    const ridings = allRidings
+      ? allRidings.map(riding => (
           <article key={`art_${riding.id}`} className={css.riding} id={`art_${riding.id}`}>
             {
               <Fragment>
@@ -23,7 +26,7 @@ export default class Ridings extends React.Component {
                   ridingName={riding.name}
                   key={`heading_${riding.id}`}
                   ridingId={riding.id}
-                  numRidings={numberOfRidings}
+                  numRidings={this._getNumberOfRidings(allRidings)}
                 />
                 <ErrorBoundary>
                   <ol className={css.riding__list}>
@@ -40,6 +43,10 @@ export default class Ridings extends React.Component {
         ))
       : null;
     return ridings;
+  }
+
+  render() {
+    return this.getRidings(this.props.allRidings);
   }
 }
 
