@@ -18,7 +18,7 @@ export default class RidingHeader extends React.Component {
 }
 
 RidingHeader.propTypes = {
-  ridingName: PropTypes.string,
-  ridingId: PropTypes.number,
-  numRidings: PropTypes.number
+  ridingName: PropTypes.string.isRequired,
+  ridingId: PropTypes.number.isRequired,
+  numRidings: PropTypes.number.isRequired
 };

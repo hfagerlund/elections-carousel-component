@@ -20,5 +20,5 @@ export default class TotalVotes extends React.Component {
 }
 
 TotalVotes.propTypes = {
-  riding: PropTypes.object
+  riding: PropTypes.object.isRequired
 };

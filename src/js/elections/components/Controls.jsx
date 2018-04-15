@@ -69,8 +69,8 @@ export default class Controls extends React.Component {
 }
 
 Controls.propTypes = {
-  count: PropTypes.number,
-  maxCount: PropTypes.number,
-  callback: PropTypes.func,
-  position: PropTypes.func
+  count: PropTypes.number.isRequired,
+  maxCount: PropTypes.number.isRequired,
+  callback: PropTypes.func.isRequired,
+  position: PropTypes.func.isRequired
 };

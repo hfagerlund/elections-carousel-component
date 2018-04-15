@@ -148,9 +148,9 @@ App.defaultProps = {
 };
 
 App.propTypes = {
-  componentTitle: PropTypes.string,
-  resultUpdatesEnabled: PropTypes.bool,
-  updatesDisabledMessage: PropTypes.string,
-  updateIntervalInMilliseconds: PropTypes.number,
-  url: PropTypes.string
+  componentTitle: PropTypes.string.isRequired,
+  resultUpdatesEnabled: PropTypes.bool.isRequired,
+  updatesDisabledMessage: PropTypes.string.isRequired,
+  updateIntervalInMilliseconds: PropTypes.number.isRequired,
+  url: PropTypes.string.isRequired
 };
