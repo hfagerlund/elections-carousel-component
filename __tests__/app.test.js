@@ -1,4 +1,5 @@
 import App from '../src/js/elections/components/App';
+import Spinner from '../src/js/elections/components/Spinner';
 import Ridings from '../src/js/elections/components/Ridings';
 import Controls from '../src/js/elections/components/Controls';
 import React, { Fragment } from 'react';
@@ -34,13 +35,6 @@ describe('App component', () => {
       assert.equal(container.length, 1);
     });
 
-    it('has one Ridings component', function() {
-      const component = TestUtils.renderIntoDocument(<App {...DEFAULT_APP_PROPS} />);
-      const childComponents = TestUtils.scryRenderedComponentsWithType(component, Ridings);
-
-      expect(childComponents.length).equal(1);
-    });
-
     it('has one Controls component', function() {
       const component = TestUtils.renderIntoDocument(<App {...DEFAULT_APP_PROPS} />);
       const childComponents = TestUtils.scryRenderedComponentsWithType(component, Controls);
@@ -53,6 +47,30 @@ describe('App component', () => {
     it('should start with an empty list of ridings', () => {
       const wrapper = shallow(<App {...DEFAULT_APP_PROPS} />);
       expect(wrapper.state('ridings')).to.eql([]);
+    });
+
+    it('should render one Ridings component if isDataLoaded state is true', function() {
+      const component = TestUtils.renderIntoDocument(<App {...DEFAULT_APP_PROPS} />);
+      component.setState({ isDataLoaded: true });
+      const childComponents = TestUtils.scryRenderedComponentsWithType(component, Ridings);
+
+      expect(childComponents.length).equal(1);
+    });
+
+    it('should not render any Ridings components if isDataLoaded state is false', function() {
+      const component = TestUtils.renderIntoDocument(<App {...DEFAULT_APP_PROPS} />);
+      component.setState({ isDataLoaded: false });
+      const childComponents = TestUtils.scryRenderedComponentsWithType(component, Ridings);
+
+      expect(childComponents.length).equal(0);
+    });
+
+    it('should render one Spinner component if isDataLoaded state is false', function() {
+      const component = TestUtils.renderIntoDocument(<App {...DEFAULT_APP_PROPS} />);
+      component.setState({ isDataLoaded: false });
+      const childComponents = TestUtils.scryRenderedComponentsWithType(component, Spinner);
+
+      expect(childComponents.length).equal(1);
     });
   });
 

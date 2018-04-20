@@ -3,7 +3,8 @@ import Controls from '../src/js/elections/components/Controls';
 import React from 'react';
 
 import { assert } from 'chai';
-import { shallow } from 'enzyme';
+import { shallow, mount } from 'enzyme';
+import { assert as Assert, spy } from 'sinon';
 
 describe('Controls component', () => {
   const TEST_CONTROLS_PROPS = {
@@ -20,6 +21,12 @@ describe('Controls component', () => {
       assert.equal(wrapper.state('nextButtonDisabled'), false);
     });
 
+    it('disables both buttons if controlsEnabled prop is false', () => {
+      const wrapper = shallow(<Controls {...TEST_CONTROLS_PROPS} controlsEnabled={false} />);
+      assert.equal(wrapper.state('prevButtonDisabled'), true);
+      assert.equal(wrapper.state('nextButtonDisabled'), true);
+    });
+
     it('enables Previous button after one click of Next button', () => {
       const wrapper = shallow(<Controls {...TEST_CONTROLS_PROPS} count={1} />);
       const nextButton = wrapper.find('button').last();
@@ -32,6 +39,31 @@ describe('Controls component', () => {
       const nextButton = wrapper.find('button').last();
       nextButton.simulate('click');
       assert.equal(wrapper.state('nextButtonDisabled'), true);
+    });
+  });
+
+  describe('lifecycle tests', () => {
+    it('calls componentDidMount() when component is mounted', () => {
+      const componentDidMountSpy = spy(Controls.prototype, 'componentDidMount');
+      mount(<Controls {...TEST_CONTROLS_PROPS} />);
+      assert.ok(Controls.prototype.componentDidMount.calledOnce);
+      componentDidMountSpy.restore();
+    });
+
+    it('calls _checkControlsEnabled() when component is mounted', () => {
+      const componentDidMountSpy = spy(Controls.prototype, '_checkControlsEnabled');
+      mount(<Controls {...TEST_CONTROLS_PROPS} />);
+      assert.ok(Controls.prototype._checkControlsEnabled.calledOnce);
+      componentDidMountSpy.restore();
+    });
+
+    it('calls _checkControlsEnabled() with the expected arguments when componentWillReceiveProps is triggered', () => {
+      const componentDidMountSpy = spy(Controls.prototype, '_checkControlsEnabled');
+      const component = mount(<Controls {...TEST_CONTROLS_PROPS} />);
+      let testControlsEnabled = false;
+      component.setProps({ controlsEnabled: false });
+      Assert.calledWith(Controls.prototype._checkControlsEnabled, testControlsEnabled);
+      componentDidMountSpy.restore();
     });
   });
 

@@ -154,9 +154,11 @@ var config = {
                     test:   /\.(png|gif|jpe?g|svg)$/i,
                     use: [
                       {
-                        loader: 'url-loader',
-                        query: {
-                          limit: 10000,
+                        loader: 'file-loader',
+                        options: {
+                          name: '[name].[ext]',
+                          outputPath: 'img/',
+                          publicPath: '../img/'
                         }
                       }
                     ]
