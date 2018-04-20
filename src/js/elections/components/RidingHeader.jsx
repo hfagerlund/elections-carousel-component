@@ -8,7 +8,9 @@ export default class RidingHeader extends React.Component {
   render() {
     return (
       <header className={css.header}>
-        <h2 className={css.heading}>Riding of: {this.props.ridingName}</h2>
+        <h2 id="ridings" className={css.heading}>
+          Riding of: {this.props.ridingName}
+        </h2>
         <h3 className={css.subheading}>
           {this.props.ridingId} of {this.props.numRidings}
         </h3>

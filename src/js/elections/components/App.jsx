@@ -3,8 +3,8 @@ import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 
 import Controls from './Controls.jsx';
-
 import Ridings from './Ridings.jsx';
+import Spinner from './Spinner.jsx';
 
 import css from './app.scss';
 
@@ -12,6 +12,7 @@ export default class App extends React.Component {
   constructor() {
     super();
     this.state = {
+      isDataLoaded: false,
       ridings: [],
       count: 0,
       slidesNewPosition: 0,
@@ -56,6 +57,7 @@ export default class App extends React.Component {
 
     window[callbackName] = function(jsonData) {
       _this.setState({
+        isDataLoaded: true,
         ridings: jsonData,
         maxClicks: Object.keys(jsonData).length,
         lastUpdated: timestamp
@@ -111,28 +113,49 @@ export default class App extends React.Component {
     );
   }
 
-  render() {
+  renderCarousel() {
     const unixTimestamp = this.state.lastUpdated;
     const date = new Date(unixTimestamp).toUTCString();
     const datetime = new Date(unixTimestamp).toISOString();
-
     return (
       <Fragment>
-        <h1 className={css.heading}>{this.props.componentTitle}</h1>
         <p aria-atomic="true" aria-live="polite" className={css.update} role="status">
           {this.props.resultUpdatesEnabled
             ? this.renderUpdatesEnabledMessage(datetime, date)
             : this.renderUpdatesDisabledMessage()}
         </p>
-        <div className={css.wrapper} style={{ left: this.state.slidesNewPosition + 'px' }}>
+        <div
+          id="electionResults"
+          className={css.wrapper}
+          style={{ left: this.state.slidesNewPosition + 'px' }}
+          aria-labelledby="ridings"
+          role="region"
+        >
           <Ridings allRidings={this.state.ridings} />
         </div>
+      </Fragment>
+    );
+  }
 
+  renderSpinner() {
+    return <Spinner />;
+  }
+
+  render() {
+    let renderConditional;
+    renderConditional = this.state.isDataLoaded ? this.renderCarousel() : this.renderSpinner();
+
+    return (
+      <Fragment>
+        <h1 className={css.heading}>{this.props.componentTitle}</h1>
+        {renderConditional}
         <Controls
+          aria-controls="electionResults"
           count={this.state.count}
           maxCount={this.state.ridings.length}
           callback={this.callBack}
           position={this.getNewPosition}
+          controlsEnabled={this.state.isDataLoaded}
         />
       </Fragment>
     );

@@ -10,7 +10,7 @@ describe('Bar component', () => {
   };
 
   describe('rendering tests', () => {
-    it('gets instance of Bar component)', () => {
+    it('gets instance of Bar component', () => {
       const wrapper = mount(<Bar {...BAR_PROPS} />);
       const inst = wrapper.instance();
       expect(inst).to.be.instanceOf(Bar);

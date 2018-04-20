@@ -15,6 +15,26 @@ export default class Controls extends React.Component {
     this.handleClickNext = this.handleClickNext.bind(this);
   }
 
+  componentWillReceiveProps(nextProps) {
+    if (this.props.controlsEnabled !== nextProps.controlsEnabled) {
+      this._checkControlsEnabled(nextProps.controlsEnabled);
+    }
+  }
+
+  componentDidMount() {
+    this._checkControlsEnabled(this.props.controlsEnabled);
+  }
+
+  _checkControlsEnabled(enabled) {
+    this.forceUpdate();
+
+    if (enabled === false) {
+      this.setState({ nextButtonDisabled: true, prevButtonDisabled: true });
+    } else {
+      this.setState({ nextButtonDisabled: false, prevButtonDisabled: true });
+    }
+  }
+
   handleClickNext() {
     if (this.props.count < this.props.maxCount - 1) {
       this.setState({ nextButtonDisabled: false, prevButtonDisabled: false });
@@ -70,7 +90,12 @@ export default class Controls extends React.Component {
   }
 }
 
+Controls.defaultProps = {
+  controlsEnabled: true
+};
+
 Controls.propTypes = {
+  controlsEnabled: PropTypes.bool.isRequired,
   count: PropTypes.number.isRequired,
   maxCount: PropTypes.number.isRequired,
   callback: PropTypes.func.isRequired,
