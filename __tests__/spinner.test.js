@@ -15,7 +15,7 @@ describe('Spinner component', () => {
     it('should 2 divs', () => {
       const wrapper = shallow(<Spinner />);
       const divs = wrapper.find('div');
-      expect(wrapper.find('div')).to.have.length(2);
+      expect(divs).to.have.length(2);
     });
 
     it('returns p element as a child of its 2nd div element', () => {
