@@ -2,17 +2,32 @@
 
 - - -
 ## Unreleased
-*(last updated: 2018-04-15)*
-
-### Changed:
-* Issue [#5 - Tests: Improve coverage](https://github.com/hfagerlund/elections-carousel-component/issues/5) - *work in progress*
-
-### Fixed:
-* Documentation improvements: [README](https://github.com/hfagerlund/elections-carousel-component/blob/master/README.md) updates
+*(last updated: 2018-04-20)*
 
 - - -
 ## Releases
 
+## 0.3.2 - 2018-04-20
+
+### New features:
+* Issue [#12](https://github.com/hfagerlund/elections-carousel-component/issues/12): Spinner
+ * Adds accessible, cross-browser indeterminate progressbar and disables/re-enables carousel controls dependending on state of data loading/updates
+
+### Changed:
+* Updates [demo page](https://hfagerlund.github.io/elections-carousel-component/) to [v0.3.2](https://github.com/hfagerlund/elections-carousel-component/releases/tag/v0.3.2)
+* Issue [#5 - Tests: Improve coverage](https://github.com/hfagerlund/elections-carousel-component/issues/5) - *work in progress*
+ * Excluded unnecessary files from test coverage reports
+ * Improved code style
+ * Improved validation of properties
+ * Removed duplication of mock data (variables) in tests
+ * Refactored source code for testability
+* *Setting/configuration change only:* Disabled automatic data updates on [demo page](https://hfagerlund.github.io/elections-carousel-component/)
+
+### Fixed:
+* [Accessibility fixes/improvements](https://github.com/hfagerlund/elections-carousel-component/issues/12) to Ridings wrapper and controls
+* Documentation improvements: [README](https://github.com/hfagerlund/elections-carousel-component/blob/master/README.md) updates
+
+- - -
 ## 0.2.0 - 2018-04-02
 
 ### New features:
