@@ -128,8 +128,6 @@ export default class App extends React.Component {
           id="electionResults"
           className={css.wrapper}
           style={{ left: this.state.slidesNewPosition + 'px' }}
-          aria-labelledby="ridings"
-          role="region"
         >
           <Ridings allRidings={this.state.ridings} />
         </div>
