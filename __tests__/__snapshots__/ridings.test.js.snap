@@ -3,17 +3,14 @@
 exports[`Ridings component rendering tests should match its snapshot with riding data (received from props) 1`] = `
 Array [
   <article
-    aria-labelledby="electionResults ridings_1"
     className="riding"
     id="art_1"
-    role="region"
   >
     <header
       className="header"
     >
       <h2
         className="heading"
-        id="ridings_1"
       >
         Riding of: 
         Annapolis
@@ -234,17 +231,14 @@ Array [
     </p>
   </article>,
   <article
-    aria-labelledby="electionResults ridings_2"
     className="riding"
     id="art_2"
-    role="region"
   >
     <header
       className="header"
     >
       <h2
         className="heading"
-        id="ridings_2"
       >
         Riding of: 
         Antigonish
@@ -419,17 +413,14 @@ Array [
     </p>
   </article>,
   <article
-    aria-labelledby="electionResults ridings_3"
     className="riding"
     id="art_3"
-    role="region"
   >
     <header
       className="header"
     >
       <h2
         className="heading"
-        id="ridings_3"
       >
         Riding of: 
         Argyle-Barrington
@@ -604,17 +595,14 @@ Array [
     </p>
   </article>,
   <article
-    aria-labelledby="electionResults ridings_4"
     className="riding"
     id="art_4"
-    role="region"
   >
     <header
       className="header"
     >
       <h2
         className="heading"
-        id="ridings_4"
       >
         Riding of: 
         Bedford
@@ -835,17 +823,14 @@ Array [
     </p>
   </article>,
   <article
-    aria-labelledby="electionResults ridings_5"
     className="riding"
     id="art_5"
-    role="region"
   >
     <header
       className="header"
     >
       <h2
         className="heading"
-        id="ridings_5"
       >
         Riding of: 
         Cape Breton Centre
@@ -1020,17 +1005,14 @@ Array [
     </p>
   </article>,
   <article
-    aria-labelledby="electionResults ridings_6"
     className="riding"
     id="art_6"
-    role="region"
   >
     <header
       className="header"
     >
       <h2
         className="heading"
-        id="ridings_6"
       >
         Riding of: 
         Cape Breton-Richmond
@@ -1205,17 +1187,14 @@ Array [
     </p>
   </article>,
   <article
-    aria-labelledby="electionResults ridings_7"
     className="riding"
     id="art_7"
-    role="region"
   >
     <header
       className="header"
     >
       <h2
         className="heading"
-        id="ridings_7"
       >
         Riding of: 
         Chester-St. Margaret’s
@@ -1390,17 +1369,14 @@ Array [
     </p>
   </article>,
   <article
-    aria-labelledby="electionResults ridings_8"
     className="riding"
     id="art_8"
-    role="region"
   >
     <header
       className="header"
     >
       <h2
         className="heading"
-        id="ridings_8"
       >
         Riding of: 
         Clare-Digby
@@ -1621,17 +1597,14 @@ Array [
     </p>
   </article>,
   <article
-    aria-labelledby="electionResults ridings_9"
     className="riding"
     id="art_9"
-    role="region"
   >
     <header
       className="header"
     >
       <h2
         className="heading"
-        id="ridings_9"
       >
         Riding of: 
         Clayton Park West
@@ -1806,17 +1779,14 @@ Array [
     </p>
   </article>,
   <article
-    aria-labelledby="electionResults ridings_10"
     className="riding"
     id="art_10"
-    role="region"
   >
     <header
       className="header"
     >
       <h2
         className="heading"
-        id="ridings_10"
       >
         Riding of: 
         Colchester-Musquodoboit Valley

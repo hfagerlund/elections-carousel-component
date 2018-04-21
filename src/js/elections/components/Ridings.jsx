@@ -19,13 +19,7 @@ export default class Ridings extends React.Component {
   getRidings(allRidings) {
     const ridings = allRidings
       ? allRidings.map(riding => (
-          <article
-            key={`art_${riding.id}`}
-            aria-labelledby={`electionResults ridings_${riding.id}`}
-            className={css.riding}
-            id={`art_${riding.id}`}
-            role="region"
-          >
+          <article key={`art_${riding.id}`} className={css.riding} id={`art_${riding.id}`}>
             {
               <Fragment>
                 <RidingHeader
