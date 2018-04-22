@@ -12,7 +12,7 @@ describe('Spinner component', () => {
       expect(inst).to.be.instanceOf(Spinner);
     });
 
-    it('should 2 divs', () => {
+    it('should render 2 divs', () => {
       const wrapper = shallow(<Spinner />);
       const divs = wrapper.find('div');
       expect(divs).to.have.length(2);
