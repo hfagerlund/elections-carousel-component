@@ -11,7 +11,6 @@ Array [
     >
       <h2
         className="heading"
-        id="ridings"
       >
         Riding of: 
         Annapolis
@@ -240,7 +239,6 @@ Array [
     >
       <h2
         className="heading"
-        id="ridings"
       >
         Riding of: 
         Antigonish
@@ -423,7 +421,6 @@ Array [
     >
       <h2
         className="heading"
-        id="ridings"
       >
         Riding of: 
         Argyle-Barrington
@@ -606,7 +603,6 @@ Array [
     >
       <h2
         className="heading"
-        id="ridings"
       >
         Riding of: 
         Bedford
@@ -835,7 +831,6 @@ Array [
     >
       <h2
         className="heading"
-        id="ridings"
       >
         Riding of: 
         Cape Breton Centre
@@ -1018,7 +1013,6 @@ Array [
     >
       <h2
         className="heading"
-        id="ridings"
       >
         Riding of: 
         Cape Breton-Richmond
@@ -1201,7 +1195,6 @@ Array [
     >
       <h2
         className="heading"
-        id="ridings"
       >
         Riding of: 
         Chester-St. Margaret’s
@@ -1384,7 +1377,6 @@ Array [
     >
       <h2
         className="heading"
-        id="ridings"
       >
         Riding of: 
         Clare-Digby
@@ -1613,7 +1605,6 @@ Array [
     >
       <h2
         className="heading"
-        id="ridings"
       >
         Riding of: 
         Clayton Park West
@@ -1796,7 +1787,6 @@ Array [
     >
       <h2
         className="heading"
-        id="ridings"
       >
         Riding of: 
         Colchester-Musquodoboit Valley

@@ -2,29 +2,30 @@
 
 - - -
 ## Unreleased
-*(last updated: 2018-04-20)*
+*(last updated: 2018-04-22)*
 
 - - -
 ## Releases
 
-## 0.3.2 - 2018-04-20
+## 0.3.3 - 2018-04-22
 
 ### New features:
 * Issue [#12](https://github.com/hfagerlund/elections-carousel-component/issues/12): Spinner
- * Adds accessible, cross-browser indeterminate progressbar and disables/re-enables carousel controls dependending on state of data loading/updates
+  * Adds accessible, cross-browser indeterminate progressbar and disables/re-enables carousel controls dependending on state of data loading/updates
 
 ### Changed:
-* Updates [demo page](https://hfagerlund.github.io/elections-carousel-component/) to [v0.3.2](https://github.com/hfagerlund/elections-carousel-component/releases/tag/v0.3.2)
+* Updates [demo page](https://hfagerlund.github.io/elections-carousel-component/) to [v0.3.3](https://github.com/hfagerlund/elections-carousel-component/releases/tag/v0.3.3)
 * Issue [#5 - Tests: Improve coverage](https://github.com/hfagerlund/elections-carousel-component/issues/5) - *work in progress*
- * Excluded unnecessary files from test coverage reports
- * Improved code style
- * Improved validation of properties
- * Removed duplication of mock data (variables) in tests
- * Refactored source code for testability
+  * Excluded unnecessary files from test coverage reports
+  * Improved code style
+  * Improved validation of properties
+  * Removed duplication of mock data (variables) in tests
+  * Refactored source code for testability
 * *Setting/configuration change only:* Disabled automatic data updates on [demo page](https://hfagerlund.github.io/elections-carousel-component/)
 
 ### Fixed:
 * [Accessibility fixes/improvements](https://github.com/hfagerlund/elections-carousel-component/issues/12) to Ridings wrapper and controls
+  * Issue [#14](https://github.com/hfagerlund/elections-carousel-component/issues/14)
 * Documentation improvements: [README](https://github.com/hfagerlund/elections-carousel-component/blob/master/README.md) updates
 
 - - -
