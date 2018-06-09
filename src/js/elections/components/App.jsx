@@ -6,7 +6,7 @@ import Controls from './Controls.jsx';
 import Ridings from './Ridings.jsx';
 import Spinner from './Spinner.jsx';
 
-import css from './app.scss';
+import css from '../../../css/app.scss';
 
 export default class App extends React.Component {
   constructor() {

@@ -2,7 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import css from './controls.scss';
+import css from '../../../css/controls.scss';
 
 export default class Controls extends React.Component {
   constructor() {

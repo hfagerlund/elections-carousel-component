@@ -1,7 +1,7 @@
 'use strict';
 import React from 'react';
 
-import css from './spinner.scss';
+import css from '../../../css/spinner.scss';
 
 export default class Spinner extends React.Component {
   render() {

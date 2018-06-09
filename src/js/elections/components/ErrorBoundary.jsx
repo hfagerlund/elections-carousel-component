@@ -2,7 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import css from './error.scss';
+import css from '../../../css/error.scss';
 
 /*
  * source: https://reactjs.org/docs/error-boundaries.html

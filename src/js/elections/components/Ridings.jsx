@@ -8,7 +8,7 @@ import RidingHeader from './RidingHeader.jsx';
 import TextSummary from './TextSummary.jsx';
 import TotalVotes from './TotalVotes.jsx';
 
-import css from './ridings.scss';
+import css from '../../../css/ridings.scss';
 
 export default class Ridings extends React.Component {
   _getNumberOfRidings(allRidings) {
