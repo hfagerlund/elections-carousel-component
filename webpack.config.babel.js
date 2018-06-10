@@ -21,7 +21,7 @@ var copyrights = `
 `;
 
 var plugins = [
-    new ExtractTextPlugin({filename: 'css/[name]-[hash].css', allChunks: true}),
+    new ExtractTextPlugin({filename: 'css/[name]-[hash].min.css', allChunks: true}),
     new webpack.optimize.CommonsChunkPlugin({
         name:      'main',
         children:  true,
@@ -91,8 +91,8 @@ var config = {
     entry:  APP_DIR + '/index.jsx',
     output: {
         path: BUILD_DIR,
-        chunkFilename: '[name]-[chunkhash].bundle.js',
-        filename: production ? 'js/[name]-[hash].js' : 'js/bundle.js',
+        chunkFilename: '[name]-[chunkhash].bundle.min.js',
+        filename: production ? 'js/[name]-[hash].min.js' : 'js/bundle.min.js',
         publicPath: 'dist/',
 	library: "ElectionsCarousel",
         libraryTarget: "umd",
