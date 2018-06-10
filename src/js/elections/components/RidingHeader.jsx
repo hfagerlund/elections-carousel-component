@@ -2,7 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import css from './ridingHeader.scss';
+import css from '../../../css/ridingHeader.scss';
 
 export default class RidingHeader extends React.Component {
   render() {

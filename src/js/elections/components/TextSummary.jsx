@@ -2,7 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import css from './textsummary.scss';
+import css from '../../../css/textsummary.scss';
 
 export default class TextSummary extends React.Component {
   _roundToTwoDec(num) {

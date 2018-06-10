@@ -2,7 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import css from './totalvotes.scss';
+import css from '../../../css/totalvotes.scss';
 
 export default class TotalVotes extends React.Component {
   getTotalVotes(riding) {

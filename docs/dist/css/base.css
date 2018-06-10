@@ -1,1 +1,19 @@
-body{font-family:'Courier New',verdana,arial,sans-serif}
+body{font-family:"Helvetica Neue",verdana,arial,sans-serif}
+.footer-main{background-color:#222;color:#fff;text-align:center; margin-top:1em;padding-top:1em;}
+.footer-main__para{padding:1em 0;margin-bottom:0}
+.header-main{
+  background-color:#222;
+  color:#fff;
+  left:0;
+  line-height:2;
+  margin:0;
+  padding:1.5em 0;
+  position:fixed;
+  text-align:center;
+  top:0;
+  width:100%;
+  z-index:3;
+}
+.header-main__heading{font-size:2em}
+.header-main__nav-link{color:#0cf;font-size:1.2em;text-decoration:none}
+.top{padding-top:12em}

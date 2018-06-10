@@ -2,7 +2,7 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 
-import css from './bar.scss';
+import css from '../../../css/bar.scss';
 
 export default class Bar extends React.Component {
   _roundToTwoDec(num) {

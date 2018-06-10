@@ -2,11 +2,22 @@
 
 - - -
 ## Unreleased
-*(last updated: 2018-04-22)*
+*(last updated: 2018-06-10)*
 
 - - -
 ## Releases
 
+## 0.4.0 - 2018-06-10
+
+### Changed:
+* Issue [#16 - Improve demo](https://github.com/hfagerlund/elections-carousel-component/issues/16)
+  * Adds mock content and two-column layout to [demo page](https://hfagerlund.github.io/elections-carousel-component/)
+  * **Additional changes**: Separates styles from component code (relocates styles from `src/js/elections/components` directory into new `src/css` directory)
+
+### Fixed:
+* Fixes build to assign correct file extensions to generated `/dist` files (ie. replaces `.css` with `.min.css` and replaces `.js` with `.min.js`) and updates corresponding references. Included as part of 'Additional changes' in Issue [#16](https://github.com/hfagerlund/elections-carousel-component/issues/16).
+
+- - -
 ## 0.3.3 - 2018-04-22
 
 ### New features:
