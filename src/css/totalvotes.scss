@@ -1,13 +1,13 @@
-$black:#000;
+$black: #000;
 
-$ctrlWidth:50px;
-$ridingWidth:600px;
+$ctrlWidth: 50px;
+$ridingWidth: 600px;
 
-.totalVotes{
-  border-top:2px dotted $black;
-  margin:0 0 0 $ctrlWidth + 10;
-  padding:1em 0;
-  text-align:center;
-  width:$ridingWidth - 2 * ($ctrlWidth + 10);
+.totalVotes {
+  border-top: 2px dotted $black;
+  margin: 0 0 0 $ctrlWidth + 10;
+  padding: 1em 0;
+  text-align: center;
+  width: $ridingWidth - 2 * ($ctrlWidth + 10);
 }
 
