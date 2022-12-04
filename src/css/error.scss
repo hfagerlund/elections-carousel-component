@@ -1,11 +1,11 @@
-$errorWidth:400px;
+$errorWidth: 400px;
 
 .error {
   border: 1px solid #f00;
-  border-left:0;
-  border-right:0;
-  margin:1em auto;
-  padding:0.5em 1em;
-  text-align:center;
-  width:$errorWidth
+  border-left: 0;
+  border-right: 0;
+  margin: 1em auto;
+  padding: 0.5em 1em;
+  text-align: center;
+  width: $errorWidth
 }

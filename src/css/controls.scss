@@ -1,83 +1,92 @@
-$ctrlWidth:50px;
-$ridingWidth:600px;
+$ctrlWidth: 50px;
+$ridingWidth: 600px;
 
-$black:#000;
+$black: #000;
 $blue: #99cedb;
-$darkerGrey:#333;
-$darkGrey:#444;
-$lightGrey:#ccc;
-$grey:#999;
+$darkerGrey: #333;
+$darkGrey: #444;
+$lightGrey: #ccc;
+$grey: #999;
 
+/*
 @mixin insetboxshadow($color){
-  box-shadow: inset 0 0 10px $color
+  box-shadow: inset 0 0 10px $color;
 }
-
+*/
 
 /* BEGIN <button> defaults removal */
-button{background-color:transparent;border:0;box-shadow:none;padding:0}
+button {
+  background-color: transparent;
+  border: 0;
+  box-shadow: none; 
+  padding: 0;
+}
+
 /* END <button> defaults removal */
 
-.ctrl{
-  background-color:$lightGrey;
-  color:$darkerGrey;
-  display:block;
-  font-size:3em;
-  font-weight:bold;
-  height:100%;
-  line-height:1.5;
-  margin:0;
-  outline:0;
-  position:absolute;
-  text-align:center;
-  text-decoration:none;
-  vertical-align:middle;
-  width:$ctrlWidth
-}
-
-.ctrl:not(:disabled):hover{
-  background-color:$blue;
-  color:$black;
-  cursor:pointer
-}
-
-.ctrl:enabled:active{
-  background-color:$blue;
-  color:$darkGrey
-}
-
-.ctrlBack{
-  border-right:1px solid $grey;
-  left:0;
-
-  &:before {
-    content:"\2039";
-  }
-}
-
-.ctrlNext{
-  border-left:1px solid $grey;
-  right:0;
-
-  &:before {
-    content:"\203A";
-  }
+.ctrl {
+  background-color: $lightGrey;
+  color: $darkerGrey;
+  display: block;
+  font-size: 3em;
+  font-weight: bold;
+  height: 100%;
+  line-height: 1.5;
+  margin: 0;
+  outline: 0;
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  width: $ctrlWidth;
 }
 
 /* BEGIN CSS3 animations */
-.ctrl:active{
-  animation-duration:0.5s;
-  animation-name:press;
-  animation-iteration-count:1;
+.ctrl:active {
+  animation-duration: 0.5s;
+  animation-name: press;
+  animation-iteration-count: 1;
   /*animation-direction:right*/
 }
 
-@keyframes press{
-  0%{padding:0;@include insetboxshadow($black);}
-  100%{padding:0}
+@keyframes press {
+  /* 0%{padding:0;@include insetboxshadow($black);}*/
+  0%{padding: 0; box-shadow: inset 0 0 10px $color;}
+  100%{padding: 0}
 }
+
 /* END animations */
 
-:global(.ctrlDisabled),:global(.ctrlDisabled):hover{
+.ctrl:not(:disabled):hover {
+  background-color: $blue;
+  color: $black;
+  cursor: pointer;
+}
+
+.ctrl:enabled:active {
+  background-color: $blue;
+  color: $darkGrey;
+}
+
+.ctrlBack {
+  border-right: 1px solid $grey;
+  left: 0;
+
+  &:before {
+    content: "\2039";
+  }
+}
+
+.ctrlNext {
+  border-left: 1px solid $grey;
+  right: 0;
+
+  &:before {
+    content: "\203A";
+  }
+}
+
+:global(.ctrlDisabled),:global(.ctrlDisabled):hover {
   animation: none;
   background-color: #ccc;
   color: #999;
@@ -93,14 +102,14 @@ button{background-color:transparent;border:0;box-shadow:none;padding:0}
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
-  width: 50px
+  width: 50px;
 }
 
-.wrapper{
-  height:100%;
-  position:absolute;
-  top:0;
-  vertical-align:top;
-  width:$ridingWidth;
-  z-index:20000
+.wrapper {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  vertical-align: top;
+  width: $ridingWidth;
+  z-index: 20000;
 }

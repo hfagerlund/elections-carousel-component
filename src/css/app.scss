@@ -1,42 +1,43 @@
-$grey:#999;
-$ridingWidth:600px;
+$grey: #999;
+$ridingWidth: 600px;
 
-
-:global(.ec-results){
-  border:1px solid $grey;
-  font-family:'Noto Sans',verdana,arial,sans-serif;
-  font-size:1em;
-  line-height:1;
+:global(.ec-results) {
+  border: 1px solid $grey;
+  font-family: 'Noto Sans',verdana,arial,sans-serif;
+  font-size: 1em;
+  line-height: 1;
   min-height: 600px;
   overflow: hidden;
-  padding-bottom:2em;
+  padding-bottom: 2em;
   position: relative;
   width: $ridingWidth
 }
 
-:global(hr){border:0;border-top:1px solid #ccc}
+hr {
+  border: 0;
+  border-top: 1px solid #ccc;
+  }
 
-
-.heading{
-  font-size:1.8em;
-  font-weight:bold;
-  margin:0;
-  padding:0.5em 0 0.5em 2.5em
+.heading {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin: 0;
+  padding: 0.5em 0 0.5em 2.5em;
 }
 
-.update{
-  border:1px solid #ccc;
-  border-radius:20px;
-  font-size:1em;
-  font-weight:normal;
-  margin:0 60px;
-  padding:0.2em 0.5em;
-  text-align:center;
-  width:$ridingWidth - 150px
+.update {
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 1em;
+  font-weight: normal;
+  margin: 0 60px;
+  padding: 0.2em 0.5em;
+  text-align: center;
+  width: $ridingWidth - 150px;
 }
 
-.wrapper{
-  left:0;
+.wrapper {
+  left: 0;
   position: absolute;
-  width: 50000px
+  width: 50000px;
 }
