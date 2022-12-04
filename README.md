@@ -21,7 +21,7 @@ Available at: https://hfagerlund.github.io/elections-carousel-component/
 
 ## Quick start
 
-```
+```console
 # clone the repo
 $ git clone https://github.com/hfagerlund/elections-carousel-component.git
 
