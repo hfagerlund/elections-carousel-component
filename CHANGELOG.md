@@ -46,12 +46,10 @@
 
 ### New features
 * Issue [#3](https://github.com/hfagerlund/elections-carousel-component/issues/3): Automatic data updates
-
 * List of new [customizable options](https://github.com/hfagerlund/elections-carousel-component#customizable-options)
 
 ### Changed
 * Vertical spacing of `<h1>` and Ridings component (to accomodate new display for data update status)
-
 * Test improvements (includes better coverage)
 
 ### Fixed
@@ -62,12 +60,10 @@
 
 ### New features
 * Adds [demo page](https://hfagerlund.github.io/elections-carousel-component/)
-
 * Riding/slide number display - (example: 8 of 10)
 
 ### Changed
 * Renames `test` directory to `__tests__` (as per [Jest](https://github.com/facebook/jest) naming conventions)
-
 * Fixes ESLint configuration (sets to [Jest](https://github.com/facebook/jest) environment)
 
 ### Fixed
@@ -84,5 +80,4 @@
 - - -
 #### *Notes* 
 * All dates shown in YYYY-MM-DD format
-
 * Using [SemVer](http://semver.org/)
