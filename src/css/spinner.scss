@@ -1,30 +1,29 @@
-$black:#000;
+$black: #000;
 
-.loader{
-  text-align:center  
+.loader {
+  text-align: center  
 }
 
-.spinner{
-background:transparent url("../assets/img/spinner.gif") no-repeat 50% 0% /  contain;
-  color:$black;
-  display:block;
-  height:50px;
-  margin:5em auto 0 auto;
-  padding:1em 2em;
-  width:15em
-  
+.spinner {
+  background: transparent url("../assets/img/spinner.gif") no-repeat 50% 0% /  contain;
+  color: $black;
+  display: block;
+  height: 50px;
+  margin: 5em auto 0 auto;
+  padding: 1em 2em;
+  width: 15em;
 }
 
-.statusLoading{
-  margin-top:1em;
-  text-transform:uppercase
+.statusLoading {
+  margin-top: 1em;
+  text-transform: uppercase;
 }
 
-.visuallyHidden{
-  height:1px;
-  left:-10000px;
-  overflow:hidden;
-  position:absolute;
-  top:auto;
-  width:1px  
+.visuallyHidden {
+  height: 1px;
+  left: -10000px;
+  overflow: hidden;
+  position: absolute;
+  top: auto;
+  width: 1px;
 }
