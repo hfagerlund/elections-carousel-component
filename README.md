@@ -1,5 +1,6 @@
 # elections-carousel-component
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/131b247182a34ba8aa9cf64230e4b470)](https://app.codacy.com/gh/hfagerlund/elections-carousel-component?utm_source=github.com&utm_medium=referral&utm_content=hfagerlund/elections-carousel-component&utm_campaign=Badge_Grade)
 [![Build Status](https://travis-ci.org/hfagerlund/elections-carousel-component.svg?branch=master)](https://travis-ci.org/hfagerlund/elections-carousel-component) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/66889e34a3ed41cea5320c0ce2f12cd9)](https://www.codacy.com/gh/hfagerlund/elections-carousel-component/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=hfagerlund/elections-carousel-component&amp;utm_campaign=Badge_Grade) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
 A component-based carousel presentation of election results data from an external (JSON) API using pure [React](https://github.com/facebook/react).
